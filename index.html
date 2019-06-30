@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="direction">
+      <span class="lang "><button class="RUSLang button">RUS</button></span>
+      <span class="arrow">&rArr;</span>
+      <span class="lang"><button class="ENGLang button">ENG</button></span>
+    </div>
+
+
+
+    <!-- <span class="lamp"><span class="display">on</span></span> -->
+    <div class="number" contenteditable="true">
+      <!-- 7777 of 7777 -->
+    </div>
+    <div class="main">
+      <p class="word">
+        <!-- word -->
+      </p>
+      <p class="transcription">
+        <!-- [trænˈskrɪpʃn] -->
+      </p>
+      <p class="traslate">
+        <!-- слово -->
+      </p>
+    </div>
+    <!-- <button class="return">&#8634;</button> -->
+    <!-- <div class="buttons"> -->
+      <div class="control-buttons">
+        <button class="back"><</button>
+        <button id="play">&#10148;</button>
+        <button class="next">></button>
+        <!-- <div class="returnBlock">
+          <button class="return">&#8635;</button>
+        </div> -->
+
+      </div>
+      <!-- <div class="notice-buttons">
+        <button class="one">1</button>
+        <button class="two">2</button>
+        <button class="three">3</button>
+      </div> -->
+    <!-- </div> -->
+
+    <div id="base">
+      <div><p class="eng">Hotel </p><p class="pronouns">[həu'tel]</p><p class="rus">Отель </p></div>
+      <div><p class="eng">We would like to check in, to check out.</p><p class="pronouns">[wiː wud laɪk tə ʧek ɪn, təʧek aut]</p><p class="rus">2. Мы бы хотели заселиться, выехать</p></div>
+      <div><p class="eng">2. Relaxed</p><p class="pronouns">[rıʹlækst]</p><p class="rus">Непринужденный, раскованный</p></div>
+      <div><p class="eng">Person, human, man</p><p class="pronouns">['pəːsən], ['hju:mən], [mæn]</p><p class="rus">3. Человек </p></div>
+      <div><p class="eng">Melancholic</p><p class="pronouns">[ˌmelən'kɔlɪk]</p><p class="rus">Меланхоличный </p></div>
+      <div><p class="eng">People</p><p class="pronouns">['pi:p(ə)l]</p><p class="rus">Люди </p></div>
+      <div><p class="eng">Ordinary, average, Regular, Usual</p><p class="pronouns">['ɔːd(ə)n(ə)rɪ], ['æv(ə)rɪʤ], [ˈrɛɡjʊlə], [ˈjuːʒʊəl]</p><p class="rus">4. Обыкновенный, Обычный </p></div>
+      <div><p class="eng">2. Tough</p><p class="pronouns">[tʌf]</p><p class="rus">Жесткий, суровый </p></div>
+      <div><p class="eng">Man, men</p><p class="pronouns">[mæn], [men]</p><p class="rus">Мужчина, Мужчины </p></div>
+      <div><p class="eng">Gentleman, gentlemen</p><p class="pronouns">['ʤentlmən], ['ʤentlmen]</p><p class="rus">джентльмен, джентльмены </p></div>
+      <div><p class="eng">Trait</p><p class="pronouns">[treɪt]</p><p class="rus">Черта</p></div>
+      <div><p class="eng">Sir</p><p class="pronouns">[sə:r]</p><p class="rus">Сэр</p></div>
+      <div><p class="eng">Friendly</p><p class="pronouns">['frendlɪ]</p><p class="rus">Дружелюбный </p></div>
+      <div><p class="eng">Mister</p><p class="pronouns">['mɪstə]</p><p class="rus">Мистер (не культурно)</p></div>
+      <div><p class="eng">Smart, Clever, Intelligent</p><p class="pronouns">[smɑːt],[ˈklevə(r)],[ɪnˈtelɪdʒənt]</p><p class="rus">3. Умный</p></div>
+      <div><p class="eng">Woman, women</p><p class="pronouns">['wumən], ['wɪmɪn]</p><p class="rus">Женщина, Женщины </p></div>
+      <div><p class="eng">Beautiful</p><p class="pronouns">['bjuːtɪf(ə)l]</p><p class="rus">Красивый </p></div>
+      <div><p class="eng">Good</p><p class="pronouns">[gud]</p><p class="rus">Хороший </p></div>
+      <div><p class="eng">Lady</p><p class="pronouns">['leɪdɪ]</p><p class="rus">та дама</p></div>
+      <div><p class="eng">Serious</p><p class="pronouns">[ˈsɪərɪəs]</p><p class="rus">Серьезный </p></div>
+      <div><p class="eng">Madam, mam</p><p class="pronouns">['mædəm], [mæm]</p><p class="rus">2. Мэм</p></div>
+      <div><p class="eng">Happy</p><p class="pronouns">['hæpɪ]</p><p class="rus">Счастливый </p></div>
+      <div><p class="eng">Miss</p><p class="pronouns">[mɪs]</p><p class="rus">Мисс</p></div>
+      <div><p class="eng">Honest</p><p class="pronouns">['ɔnɪst]</p><p class="rus">Честный </p></div>
+      <div><p class="eng">Missis (Mrs)</p><p class="pronouns">['mɪsɪz]</p><p class="rus">Миссис</p></div>
+      <div><p class="eng">Ideal, Perfect</p><p class="pronouns">[aɪˈdiːəl], ['pɜːfɪkt]</p><p class="rus">2. Идеальный</p></div>
+      <div><p class="eng">Ms</p><p class="pronouns">[mɪz]</p><p class="rus">Обращение к даме, если не известно, замужем ли</p></div>
+      <div><p class="eng">Name</p><p class="pronouns">[neɪm]</p><p class="rus">Имя и фамилия </p></div>
+      <div><p class="eng">Important</p><p class="pronouns">[ɪm'pɔːt(ə)nt]</p><p class="rus">Важный </p></div>
+      <div><p class="eng">Kind</p><p class="pronouns">[kaɪnd]</p><p class="rus">Добрый </p></div>
+      <div><p class="eng">First name</p><p class="pronouns">[fə:st neɪm]</p><p class="rus">Имя </p></div>
+      <div><p class="eng">Positive</p><p class="pronouns">[ˈpɒzɪtɪv]</p><p class="rus">Позитивный </p></div>
+      <div><p class="eng">Last name, surname, family name</p><p class="pronouns">[lɑ:st neɪm], ['sə:neɪm], ['fæm(ə)lɪ neɪm]</p><p class="rus">3. Фамилия </p></div>
+      <div><p class="eng">2. Patient</p><p class="pronouns">[ˈpeɪʃ(ə)nt]</p><p class="rus">Терпеливый, пациент</p></div>
+      <div><p class="eng">Age</p><p class="pronouns">[eɪdʒ]</p><p class="rus">Возраст </p></div>
+      <div><p class="eng">Baby</p><p class="pronouns">['beɪbɪ]</p><p class="rus">Малыш, младенец </p></div>
+      <div><p class="eng">Organized</p><p class="pronouns">['ɔːg(ə)naɪzd]</p><p class="rus">Организованный </p></div>
+      <div><p class="eng">Active</p><p class="pronouns">[ˈæktiv]</p><p class="rus">Активный </p></div>
+      <div><p class="eng">Teenager</p><p class="pronouns">['ti:nˌeɪdʒə]</p><p class="rus">Тинейджер</p></div>
+      <div><p class="eng">Wise</p><p class="pronouns">[waɪz]</p><p class="rus">Мудрый</p></div>
+      <div><p class="eng">Adolescen</p><p class="pronouns">[ ædə'lesənt]</p><p class="rus">Подросток </p></div>
+      <div><p class="eng">Child</p><p class="pronouns">[tſaɪld]</p><p class="rus">Ребенок (нейтр.) </p></div>
+      <div><p class="eng">Sociable</p><p class="pronouns">['səuʃəb(ə)l]</p><p class="rus">Общительный </p></div>
+      <div><p class="eng">Cheerful, Merry</p><p class="pronouns">['ʧɪəf(ə)l], ['merɪ]</p><p class="rus">2. Веселый </p></div>
+      <div><p class="eng">Adult</p><p class="pronouns">['ædʌlt]</p><p class="rus">Взрослый </p></div>
+      <div><p class="eng">Optimist</p><p class="pronouns">[ˈɒptɪmɪst]</p><p class="rus">Оптимист </p></div>
+      <div><p class="eng">Married</p><p class="pronouns">['mærɪd]</p><p class="rus">Замужем </p></div>
+      <div><p class="eng">2. Attentive</p><p class="pronouns">[ə'tentɪv]</p><p class="rus">Внимательный, заботливый </p></div>
+      <div><p class="eng">Sensitive</p><p class="pronouns">['sen(t)sɪtɪv]</p><p class="rus">Чуткий, чустельный </p></div>
+      <div><p class="eng">Divorced</p><p class="pronouns">[dɪ'vɔ:st]</p><p class="rus">В разводе </p></div>
+      <div><p class="eng">Hard-working</p><p class="pronouns">['hɑːdˌwɜːkɪŋ]</p><p class="rus">Трудолюбивый </p></div>
+      <div><p class="eng">3. Single</p><p class="pronouns">['sɪŋg(ə)l]</p><p class="rus">Не замужем, холост, не встречается</p></div>
+      <div><p class="eng">Wonderful</p><p class="pronouns">['wʌndəf(ə)l]</p><p class="rus">Прекрасный </p></div>
+      <div><p class="eng">Widowed</p><p class="pronouns">['wɪdəud]</p><p class="rus">Овдовевшая</p></div>
+      <div><p class="eng">Phone number</p><p class="pronouns">[fəʊn 'nʌmbə]</p><p class="rus">Номер телефона </p></div>
+      <div><p class="eng">Responsible</p><p class="pronouns">[rɪˈspɒnsɪb(ə)l]</p><p class="rus">Ответственный </p></div>
+      <div><p class="eng">Kid</p><p class="pronouns">[kɪd]</p><p class="rus">Ребенок (киндэр)</p></div>
+      <div><p class="eng">Independent</p><p class="pronouns">[ˌɪndɪ'pendənt]</p><p class="rus">Независимый </p></div>
+      <div><p class="eng">Kiddo</p><p class="pronouns">[ʹkıdəʋ]</p><p class="rus">Ребенок (к своему чаду) </p></div>
+      <div><p class="eng">Attractive</p><p class="pronouns">[ə'træktɪv]</p><p class="rus">Привлекательный </p></div>
+      <div><p class="eng">Toddler</p><p class="pronouns">['tɔdlə]</p><p class="rus">ребенок, начинающий ходить</p></div>
+      <div><p class="eng">Fair</p><p class="pronouns">[feər]</p><p class="rus">Справедливый </p></div>
+      <div><p class="eng">Brat</p><p class="pronouns">[bræt]</p><p class="rus">Ребенок, отродье</p></div>
+      <div><p class="eng">2. Ambitious</p><p class="pronouns">[æm'bɪʃəs]</p><p class="rus">Амбициозный, честолюбивый</p></div>
+      <div><p class="eng">Brave</p><p class="pronouns">[breɪv]</p><p class="rus">Смелый </p></div>
+      <div><p class="eng">Personality</p><p class="pronouns">[pə:sə'nælɪtɪ]</p><p class="rus">Личность </p></div>
+      <div><p class="eng">2. Efficient</p><p class="pronouns">[ɪ'fɪʃ(ə)nt]</p><p class="rus">Квалифицированный, умелый</p></div>
+      <div><p class="eng">Celebrity, pop star</p><p class="pronouns">[sɪ'lebrɪtɪ], [pɔp sta:]</p><p class="rus">Известная личность, попзвезда</p></div>
+      <div><p class="eng">Careful</p><p class="pronouns">['keəf(ə)l]</p><p class="rus">Заботливый</p></div>
+      <div><p class="eng">Folks</p><p class="pronouns">[fəuks]</p><p class="rus">Предки, родня </p></div>
+      <div><p class="eng">Early twenties</p><p class="pronouns">['ə:lɪ-'twentɪz]</p><p class="rus">20-24 </p></div>
+      <div><p class="eng">2. Calm</p><p class="pronouns">[kɑːm]</p><p class="rus">Тихий, спокойный </p></div>
+      <div><p class="eng">Proud</p><p class="pronouns">[praud]</p><p class="rus">Гордый</p></div>
+      <div><p class="eng">Mid- twenties</p><p class="pronouns">[mɪd-'twentɪz]</p><p class="rus">24-26 </p></div>
+      <div><p class="eng">Late twenties</p><p class="pronouns">[leɪt-'twentɪz]</p><p class="rus">25-29 </p></div>
+      <div><p class="eng">Energetic</p><p class="pronouns">[ˌenə'ʤetɪk]</p><p class="rus">энергичный </p></div>
+      <div><p class="eng">Lovely</p><p class="pronouns">['lʌvlɪ]</p><p class="rus">Чудный миг</p></div>
+      <div><p class="eng">Middle-aged</p><p class="pronouns">['mɪdəl-eɪdʒd]</p><p class="rus">40+ </p></div>
+      <div><p class="eng">Retired</p><p class="pronouns">[rɪ'taɪəd]</p><p class="rus">На пенсии </p></div>
+      <div><p class="eng">Modest</p><p class="pronouns">[ˈmɒdɪst]</p><p class="rus">Скромный </p></div>
+      <div><p class="eng">Talented</p><p class="pronouns">['tæləntɪd]</p><p class="rus">Талантливый </p></div>
+      <div><p class="eng">Elderly</p><p class="pronouns">['eldəlɪ]</p><p class="rus">Пожилой </p></div>
+      <div><p class="eng">Genius</p><p class="pronouns">['ʤiːnɪəs]</p><p class="rus">Гениальный </p></div>
+      <div><p class="eng">Marital, family status</p><p class="pronouns">['mærɪtəl], ['fæmɪlɪ 'steɪtəs]</p><p class="rus">2. Семейное положение </p></div>
+      <div><p class="eng">Shy</p><p class="pronouns">[ʃaɪ]</p><p class="rus">Застенчивый </p></div>
+      <div><p class="eng">Gender, sex</p><p class="pronouns">['dʒendə], [seks]</p><p class="rus">2. Пол </p></div>
+      <div><p class="eng">Reliable</p><p class="pronouns">[rɪˈlaɪəbəl]</p><p class="rus">Надежный</p></div>
+      <div><p class="eng">Contact information</p><p class="pronouns">['kɒntækt ˌɪnfə'meɪʃ(ə)n]</p><p class="rus">Контактные данные </p></div>
+      <div><p class="eng">Mature</p><p class="pronouns">[mə'tjuə]</p><p class="rus">Зрелый </p></div>
+      <div><p class="eng">Mobile, cell number</p><p class="pronouns">['məubaɪl], [sel 'nʌmbə]</p><p class="rus">2. Мобильный номер</p></div>
+      <div><p class="eng">Bashful</p><p class="pronouns">['bæʃf(ə)l]</p><p class="rus">Робкий</p></div>
+      <div><p class="eng">Number</p><p class="pronouns">['nʌmbə]</p><p class="rus">Номер </p></div>
+      <div><p class="eng">Home number</p><p class="pronouns">[həʊm 'nʌmbə]</p><p class="rus">Домашний номер </p></div>
+      <div><p class="eng">Broad-minded</p><p class="pronouns">[ˌbrɔːd'maɪndɪd]</p><p class="rus">с широким кругозором</p></div>
+      <div><p class="eng">Work number, office number</p><p class="pronouns">[wə:k ('ɒfɪs) 'nʌmbə]</p><p class="rus">2. Рабочий номер </p></div>
+      <div><p class="eng">Charming, Fascinating</p><p class="pronouns">['ʧɑːmɪŋ], ['fæsɪneɪtɪŋ]</p><p class="rus">2. Очаровательный </p></div>
+      <div><p class="eng">Address</p><p class="pronouns">[ə'dress]</p><p class="rus">Адрес </p></div>
+      <div><p class="eng">Confident</p><p class="pronouns">['kɔnfɪd(ə)nt]</p><p class="rus">Уверенный в себе </p></div>
+      <div><p class="eng">Hungry</p><p class="pronouns">['hʌŋgrɪ]</p><p class="rus">Голодный </p></div>
+      <div><p class="eng">Loyal</p><p class="pronouns">['lɔɪəl]</p><p class="rus">Верный, преданный</p></div>
+      <div><p class="eng">Loyal</p><p class="pronouns">['lɔɪəl]</p><p class="rus">Преданность</p></div>
+      <div><p class="eng">Curious</p><p class="pronouns">[ˈkjʊərɪəs]</p><p class="rus">Любопытный </p></div>
+      <div><p class="eng">Big</p><p class="pronouns">[bɪg]</p><p class="rus">Большой </p></div>
+      <div><p class="eng">Large</p><p class="pronouns">[lɑːʤ]</p><p class="rus">Большой+</p></div>
+      <div><p class="eng">3. Determined</p><p class="pronouns">[dɪ'tɜːmɪnd]</p><p class="rus">Решительный, непоколебимый, метоустремлённый</p></div>
+      <div><p class="eng">Disciplined</p><p class="pronouns">['dɪsəplɪnd]</p><p class="rus">Дисциплинированный </p></div>
+      <div><p class="eng">Little, small</p><p class="pronouns">['lɪtl], [smɔːl]</p><p class="rus">2. Маленький </p></div>
+      <div><p class="eng">2. Economical</p><p class="pronouns">[ˌiːkə'nɔmɪk(ə)l]</p><p class="rus">Бережливый, расчетливый </p></div>
+      <div><p class="eng">2. Hot</p><p class="pronouns">[hɔt]</p><p class="rus">Горячий, острый</p></div>
+      <div><p class="eng">Busy</p><p class="pronouns">['bɪzɪ]</p><p class="rus">Занятой </p></div>
+      <div><p class="eng">Enthusiastic</p><p class="pronouns">[ɪnˌθjuːzɪ'æstɪk]</p><p class="rus">Полный энтузиазма</p></div>
+      <div><p class="eng">Crazy (about)</p><p class="pronouns">['kreɪzɪ]</p><p class="rus">Помешанный на чем-либо</p></div>
+      <div><p class="eng">Excellent</p><p class="pronouns">['eks(ə)l(ə)nt]</p><p class="rus">Великолепный </p></div>
+      <div><p class="eng">Real, true</p><p class="pronouns">[rɪəl], [truː]</p><p class="rus">2. Настоящий </p></div>
+      <div><p class="eng">2 Generous</p><p class="pronouns">['ʤen(ə)rəs]</p><p class="rus">Великодушный, щедрый </p></div>
+      <div><p class="eng">Strict</p><p class="pronouns">[strɪkt]</p><p class="rus">Строгий </p></div>
+      <div><p class="eng">Gifted</p><p class="pronouns">['gɪftɪd]</p><p class="rus">Одаренный </p></div>
+      <div><p class="eng">Humane</p><p class="pronouns">[hjuːˈmeɪn]</p><p class="rus">Гуманный </p></div>
+      <div><p class="eng">Pleased</p><p class="pronouns">[pliːzd]</p><p class="rus">Довольный </p></div>
+      <div><p class="eng">Realist</p><p class="pronouns">[ˈrɪəlɪst]</p><p class="rus">Реалист </p></div>
+      <div><p class="eng">Strong-willed</p><p class="pronouns">[stroŋ- wild]</p><p class="rus">Волевой </p></div>
+      <div><p class="eng">Patriotic</p><p class="pronouns">[ˌpætrɪ'ɔtɪk]</p><p class="rus">Патриотичный </p></div>
+      <div><p class="eng">2. Understanding</p><p class="pronouns">[ˌʌndə'stændɪŋ]</p><p class="rus">Понимающий, отзывчивый </p></div>
+      <div><p class="eng">Impulsive</p><p class="pronouns">[ɪm'pʌlsɪv]</p><p class="rus">Импульсивный </p></div>
+      <div><p class="eng">Excited</p><p class="pronouns">[ɪk'saɪtɪd]</p><p class="rus">Взволнованный </p></div>
+      <div><p class="eng">Witty</p><p class="pronouns">[ˈwɪtɪ]</p><p class="rus">Остроумный </p></div>
+      <div><p class="eng">Bad</p><p class="pronouns">[bæd]</p><p class="rus">Плохой </p></div>
+      <div><p class="eng">Jealous</p><p class="pronouns">['ʤeləs]</p><p class="rus">Ревнивый </p></div>
+      <div><p class="eng">Cold</p><p class="pronouns">[kəuld]</p><p class="rus">Холодный </p></div>
+      <div><p class="eng">Naive</p><p class="pronouns">[naɪˈiːv]</p><p class="rus">Наивный </p></div>
+      <div><p class="eng">Passive</p><p class="pronouns">[ˈpæsɪv]</p><p class="rus">Пассивный </p></div>
+      <div><p class="eng">Silly, Stupid, Foolish</p><p class="pronouns">['sɪlɪ], [ˈstjuːpɪd], ['fuːlɪʃ]</p><p class="rus">3. Глупый </p></div>
+      <div><p class="eng">Angry, evil</p><p class="pronouns">[ˈæŋɡrɪ], [ˈiːvl]</p><p class="rus">2. Злой </p></div>
+      <div><p class="eng">2. Weird</p><p class="pronouns">[wɪəd]</p><p class="rus">Странный, чудной </p></div>
+      <div><p class="eng">2. Sly</p><p class="pronouns">[slaɪ]</p><p class="rus">Коварный, хитрый </p></div>
+      <div><p class="eng">Lazy</p><p class="pronouns">[leɪzɪ]</p><p class="rus">Ленивый </p></div>
+      <div><p class="eng">Spontaneous</p><p class="pronouns">[spɔn'teɪnɪəs]</p><p class="rus">Спонтанный</p></div>
+      <div><p class="eng">Boring, dull</p><p class="pronouns">['bɔːrɪŋ], [dʌl]</p><p class="rus">2. Скучный </p></div>
+      <div><p class="eng">Unpredictable</p><p class="pronouns">[ˌʌnprɪ'dɪktəbl]</p><p class="rus">Непредсказуемый </p></div>
+      <div><p class="eng">Greedy</p><p class="pronouns">[ˈɡriːdɪ]</p><p class="rus">Жадный </p></div>
+      <div><p class="eng">Selfish</p><p class="pronouns">['selfɪʃ]</p><p class="rus">Эгоистичный </p></div>
+      <div><p class="eng">Unusual, uncommon</p><p class="pronouns">[ʌn'juːʒ(ə)l], [ʌn'kɔmən]</p><p class="rus">2. Необычный </p></div>
+      <div><p class="eng">Character trait</p><p class="pronouns">[ˈkærɪktə(r) treɪt]</p><p class="rus">Черта ха-актера </p></div>
+      <div><p class="eng">Terrible, Horrible</p><p class="pronouns">['terəb(ə)l], ['hɔrəb(ə)l]</p><p class="rus">2. Ужасный (в прямом смысле)</p></div>
+      <div><p class="eng">2. Aggressive</p><p class="pronouns">[ə'gresɪv]</p><p class="rus">Агрессивный, пробивной</p></div>
+      <div><p class="eng">Accurate</p><p class="pronouns">['ækjərət]</p><p class="rus">Скрупулезный </p></div>
+      <div><p class="eng">Ugly</p><p class="pronouns">['ʌglɪ]</p><p class="rus">Уродливый </p></div>
+      <div><p class="eng">Awesome</p><p class="pronouns">['ɔːsəm]</p><p class="rus">Охуенный</p></div>
+      <div><p class="eng">Nervous</p><p class="pronouns">['nɜːvəs]</p><p class="rus">Нервный </p></div>
+      <div><p class="eng">Bored</p><p class="pronouns">[bɔːd]</p><p class="rus">Испытывающий скуку </p></div>
+      <div><p class="eng">Upset</p><p class="pronouns">[ʌp'set]</p><p class="rus">Расстроенный </p></div>
+      <div><p class="eng">Capricious</p><p class="pronouns">[kə'prɪʃəs]</p><p class="rus">Капризный</p></div>
+      <div><p class="eng">Cruel</p><p class="pronouns">[ˈkruːəl]</p><p class="rus">Жестокий </p></div>
+      <div><p class="eng">Fretful, Impatient</p><p class="pronouns">['fretf(ə)l], [ɪm'peɪʃ(ə)nt]</p><p class="rus">2. Нетерпеливый </p></div>
+      <div><p class="eng">2. Moody</p><p class="pronouns">['muːdɪ]</p><p class="rus">Унылый, угрюмый </p></div>
+      <div><p class="eng">Unsociable</p><p class="pronouns">[ʌn'səuʃəbl]</p><p class="rus">Необщительный </p></div>
+      <div><p class="eng">2. Nasty, Disgusting</p><p class="pronouns">['nɑːstɪ], [dɪs'gʌstɪŋ]</p><p class="rus">2. Мерзкий, Отвратительный </p></div>
+      <div><p class="eng">Cunning</p><p class="pronouns">['kʌnɪŋ]</p><p class="rus">Хитрый, лукавый, коварный; пронирливый, трамп</p></div>
+      <div><p class="eng">Pessimist</p><p class="pronouns">[ˈpesɪmɪst]</p><p class="rus">Пессимист </p></div>
+      <div><p class="eng">Eccentric</p><p class="pronouns">[ɪk'sentrɪk]</p><p class="rus">Эксцентричный </p></div>
+      <div><p class="eng">Cynical</p><p class="pronouns">[ˈsɪnɪkəl]</p><p class="rus">Циничный </p></div>
+      <div><p class="eng">Light-hearted</p><p class="pronouns">[ˌlaɪtˈhɑːtɪd]</p><p class="rus">Безобидний</p></div>
+      <div><p class="eng">Dependent (on)</p><p class="pronouns">[dɪ'pendənt]</p><p class="rus">Зависимый (от) </p></div>
+      <div><p class="eng">Easy-going</p><p class="pronouns">[i:zi:gəuiŋ]</p><p class="rus">С ним легко</p></div>
+      <div><p class="eng">Reserved</p><p class="pronouns">[rɪ'zɜːvd]</p><p class="rus">Замкнутый </p></div>
+      <div><p class="eng">Envious</p><p class="pronouns">['envɪəs]</p><p class="rus">Завистливый </p></div>
+      <div><p class="eng">Profession</p><p class="pronouns">[prəˈfeʃn]</p><p class="rus">Профессия</p></div>
+      <div><p class="eng">Thoughtful</p><p class="pronouns">[θɔːtf(ə)l]</p><p class="rus">Задумчивый </p></div>
+      <div><p class="eng">Management</p><p class="pronouns">['mænɪʤmənt]</p><p class="rus">Управление </p></div>
+      <div><p class="eng">President</p><p class="pronouns">['prezɪd(ə)nt]</p><p class="rus">Президент </p></div>
+      <div><p class="eng">Vice-president</p><p class="pronouns">[ˌvaɪs'prezɪd(ə)nt]</p><p class="rus">Вице-президент </p></div>
+      <div><p class="eng">Executive officer (CEO)</p><p class="pronouns">[ɪg'zekjutɪv 'ɔfɪsə] ([ˈsiːiːəʊ])</p><p class="rus">Ответственное (исполнительное) лицо </p></div>
+      <div><p class="eng">Director</p><p class="pronouns">[dɪ'rektə], [daɪ-]</p><p class="rus">Директор</p></div>
+      <div><p class="eng">Managing director</p><p class="pronouns">['mænɪʤɪŋ dɪ'rektə]</p><p class="rus">Исполнительный дирекрор</p></div>
+      <div><p class="eng">Financial director</p><p class="pronouns">[faɪ'nænʃ(ə)l dɪ'rektə]</p><p class="rus">Финансовый директор</p></div>
+      <div><p class="eng">Marketing director</p><p class="pronouns">['mɑːkɪtɪŋ dɪ'rektə]</p><p class="rus">Маркетинговый директор</p></div>
+      <div><p class="eng">Deputy</p><p class="pronouns">['depjutɪ]</p><p class="rus">Заместитель управляющего </p></div>
+      <div><p class="eng">General manager</p><p class="pronouns">['ʤen(ə)r(ə)l 'mænɪʤə]</p><p class="rus">Генеральный директор</p></div>
+      <div><p class="eng">Assistant manager</p><p class="pronouns">[ə'sɪst(ə)nt 'mænɪʤə]</p><p class="rus">Помощник заведующего </p></div>
+      <div><p class="eng">Personnel manager</p><p class="pronouns">[ˌpɜːs(ə)'nel 'mænɪʤə]</p><p class="rus">Начальник отдела кадров </p></div>
+      <div><p class="eng">manager</p><p class="pronouns">mænɪʤə</p><p class="rus">менеджер</p></div>
+      <div><p class="eng">Production manager</p><p class="pronouns">[prə'dʌkʃ(ə)n 'mænɪʤə]</p><p class="rus">Руководитель производства </p></div>
+      <div><p class="eng">Marketing manager</p><p class="pronouns">['mɑːkɪtɪŋ 'mænɪʤə]</p><p class="rus">Менеджер по маркетингу </p></div>
+      <div><p class="eng">Sales manager</p><p class="pronouns">[seɪlz 'mænɪʤə]</p><p class="rus">Менеджер по сбыту </p></div>
+      <div><p class="eng">Project manager</p><p class="pronouns">['prɔʤekt 'mænɪʤə]</p><p class="rus">Руководитель проекта </p></div>
+      <div><p class="eng">Supervisor</p><p class="pronouns">['s(j)uːpəvaɪzə]</p><p class="rus">Надсмотрщик, надзиратель, прораб</p></div>
+      <div><p class="eng">2. Inspector</p><p class="pronouns">[ɪn'spektə]</p><p class="rus">Инспектор, ревизор </p></div>
+      <div><p class="eng">Office</p><p class="pronouns">['ɔfɪs]</p><p class="rus">Офис </p></div>
+      <div><p class="eng">Office clerk</p><p class="pronouns">['ɔfɪs klɑːk ]</p><p class="rus">Заведующий канцелярии</p></div>
+      <div><p class="eng">2. Receptionist</p><p class="pronouns">[rɪ'sepʃ(ə)nɪst]</p><p class="rus">Секретарь в учреждении, Администратор отеля</p></div>
+      <div><p class="eng">2. Secretary</p><p class="pronouns">['sekrət(ə)rɪ]</p><p class="rus">Секретарь, помощник </p></div>
+      <div><p class="eng">Bank</p><p class="pronouns">[bæŋk]</p><p class="rus">Банк </p></div>
+      <div><p class="eng">Banker</p><p class="pronouns">['bæŋkə]</p><p class="rus">Банкир </p></div>
+      <div><p class="eng">Bank officer</p><p class="pronouns">[bæŋk 'ɔfɪsə]</p><p class="rus">Банковский служащий </p></div>
+      <div><p class="eng">Accountant, bookkeeper</p><p class="pronouns">[ə'kauntənt], ['bukˌkiːpə]</p><p class="rus">2. Бухгалтер </p></div>
+      <div><p class="eng">Economist</p><p class="pronouns">[ɪ'kɔnəmɪst]</p><p class="rus">Экономист </p></div>
+      <div><p class="eng">Cashier</p><p class="pronouns">[kæ'ʃɪə]</p><p class="rus">Кассир </p></div>
+      <div><p class="eng">Auditor</p><p class="pronouns">['ɔːdɪtə]</p><p class="rus">Аудитор</p></div>
+      <div><p class="eng">Sales</p><p class="pronouns">[seɪlz] </p><p class="rus">Продажи</p></div>
+      <div><p class="eng">Store, Shop</p><p class="pronouns">[stɔːz], [ʃɔps]</p><p class="rus">2. Магазин</p></div>
+      <div><p class="eng">Sales representative</p><p class="pronouns">[seɪlz reprɪ'zentətɪv]</p><p class="rus">Торговый представитель </p></div>
+      <div><p class="eng">Salesperson,salesman, saleswoman,seller</p><p class="pronouns">['seɪlzˌpɜːs(ə)n], ['seɪlzmən], ['seɪlzˌwumən], ['selə]</p><p class="rus">4. Продавец</p></div>
+      <div><p class="eng">Buyer</p><p class="pronouns">['baɪə]</p><p class="rus">Покупатель </p></div>
+      <div><p class="eng">Creative work</p><p class="pronouns">[krɪ'eɪtɪv wɜːk]</p><p class="rus">Творческая работа </p></div>
+      <div><p class="eng">Art </p><p class="pronouns">[ɑːt] </p><p class="rus">Искуство</p></div>
+      <div><p class="eng">Musician</p><p class="pronouns">[mjuː'zɪʃ(ə)n]</p><p class="rus">Музыкант </p></div>
+      <div><p class="eng">Composer</p><p class="pronouns">[kəm'pəuzə]</p><p class="rus">Композитор </p></div>
+      <div><p class="eng">Singer</p><p class="pronouns">['sɪŋə]</p><p class="rus">Певец </p></div>
+      <div><p class="eng">Dancer</p><p class="pronouns">['dɑːn(t)sə]</p><p class="rus">Танцор </p></div>
+      <div><p class="eng">Artist, Painter</p><p class="pronouns">['ɑːtɪst], ['peɪntə]</p><p class="rus">2. Художник </p></div>
+      <div><p class="eng">2. Painter</p><p class="pronouns">['peɪntə]</p><p class="rus">Художник,маляр </p></div>
+      <div><p class="eng">Sculptor</p><p class="pronouns">['skʌlptə]</p><p class="rus">Скульптор </p></div>
+      <div><p class="eng">Architect</p><p class="pronouns">['ɑːkɪtekt]</p><p class="rus">Архитектор </p></div>
+      <div><p class="eng">Film director</p><p class="pronouns">[fɪlm dɪ'rektə]</p><p class="rus">Режиссёр </p></div>
+      <div><p class="eng">Producer</p><p class="pronouns">[prə'djuːsə]</p><p class="rus">Продюсер </p></div>
+      <div><p class="eng">Art director</p><p class="pronouns">[ɑːt dɪ'rektə]</p><p class="rus">Художественный директор </p></div>
+      <div><p class="eng">Actor,actress</p><p class="pronouns">['æktə], ['æktrəs]</p><p class="rus">Актёр,актриса </p></div>
+      <div><p class="eng">Cameraman</p><p class="pronouns">['kæm(ə)rəmæn]</p><p class="rus">Оператор</p></div>
+      <div><p class="eng">Journalist</p><p class="pronouns">['ʤɜːn(ə)lɪst]</p><p class="rus">Журналист </p></div>
+      <div><p class="eng">Reporter</p><p class="pronouns">[rɪ'pɔːtə]</p><p class="rus">Репортёр </p></div>
+      <div><p class="eng">Correspondent</p><p class="pronouns">[ˌkɔrɪ'spɔnd(ə)nt]</p><p class="rus">Корреспондент </p></div>
+      <div><p class="eng">Photographer</p><p class="pronouns">[fə'tɔgrəfə]</p><p class="rus">Фотограф </p></div>
+      <div><p class="eng">School</p><p class="pronouns">[skuːl]</p><p class="rus">Школа</p></div>
+      <div><p class="eng">College</p><p class="pronouns">['kɔlɪʤ]</p><p class="rus">Колледж</p></div>
+      <div><p class="eng">2. Principal</p><p class="pronouns">['prɪn(t)səp(ə)l]</p><p class="rus">Директор (школы), ректор</p></div>
+      <div><p class="eng">Professor</p><p class="pronouns">[prə'fesə]</p><p class="rus">Профессор </p></div>
+      <div><p class="eng">Teacher</p><p class="pronouns">['tiːʧə]</p><p class="rus">Учитель </p></div>
+      <div><p class="eng">2. Student</p><p class="pronouns">['st(j)uːd(ə)nt]</p><p class="rus">Студент, ученик </p></div>
+      <div><p class="eng">Construction</p><p class="pronouns">[kən'strʌkʃ(ə)n]</p><p class="rus">Строительство </p></div>
+      <div><p class="eng">Engineer</p><p class="pronouns">[ˌenʤɪ'nɪə]</p><p class="rus">Инженер </p></div>
+      <div><p class="eng">Technician</p><p class="pronouns">[tek'nɪʃ(ə)n]</p><p class="rus">Техник </p></div>
+      <div><p class="eng">Mechanic</p><p class="pronouns">[mɪ'kænɪk]</p><p class="rus">Механик </p></div>
+      <div><p class="eng">Builder</p><p class="pronouns">['bɪldə]</p><p class="rus">Строитель </p></div>
+      <div><p class="eng">Construction worker</p><p class="pronouns">[kən'strʌkʃ(ə)n 'wɜːkə]</p><p class="rus">Рабочий на строике</p></div>
+      <div><p class="eng">Repairer</p><p class="pronouns">[rɪ'peərə]</p><p class="rus">Ремонтник </p></div>
+      <div><p class="eng">Welder</p><p class="pronouns">['weldə]</p><p class="rus">Сварщик </p></div>
+      <div><p class="eng">Bricklayer</p><p class="pronouns">['brɪkˌleɪə]</p><p class="rus">Каменщик </p></div>
+      <div><p class="eng">2. Carpenter</p><p class="pronouns">['kɑːp(ə)ntə]</p><p class="rus">Плотник,столяр </p></div>
+      <div><p class="eng">Plumber</p><p class="pronouns">['plʌmə]</p><p class="rus">Водопроводчик </p></div>
+      <div><p class="eng">Science</p><p class="pronouns">['saɪən(t)s]</p><p class="rus">Наука </p></div>
+      <div><p class="eng">Scientist,  explorer, researcher</p><p class="pronouns">['saɪəntɪst],  [ɪk'splɔːrə], [rɪ'sɜːʧə]</p><p class="rus">Учёный, исследователь, научный работник</p></div>
+      <div><p class="eng">Mathematician</p><p class="pronouns">[ˌmæθ(ə)mə'tɪʃ(ə)n]</p><p class="rus">Математик </p></div>
+      <div><p class="eng">Physicist</p><p class="pronouns">['fɪzɪsɪst]</p><p class="rus">Физик </p></div>
+      <div><p class="eng">Astronomer</p><p class="pronouns">[ə'strɔnəmə]</p><p class="rus">Астроном </p></div>
+      <div><p class="eng">Archaeologist</p><p class="pronouns">[ˌɑːkɪ'ɔləʤɪst]</p><p class="rus">Археолог </p></div>
+      <div><p class="eng">Law</p><p class="pronouns">[lɔː]</p><p class="rus">Закон</p></div>
+      <div><p class="eng">2. Order</p><p class="pronouns">['ɔːdə]</p><p class="rus">Порядок, заказ</p></div>
+      <div><p class="eng">Judge</p><p class="pronouns">['ʤʌʤ]</p><p class="rus">Судья </p></div>
+      <div><p class="eng">2. Lawyer</p><p class="pronouns">['lɔɪə], ['lɔːjə]</p><p class="rus">Адвокат, правник</p></div>
+      <div><p class="eng">Attorney</p><p class="pronouns">[ə'təːnɪ]</p><p class="rus">Юрист </p></div>
+      <div><p class="eng">Police officer, policeman</p><p class="pronouns">[pə'liːs 'ɔfɪsə], [pə'liːsmən]</p><p class="rus">2. Полицейский </p></div>
+      <div><p class="eng">Traffic officer, Traffic warden </p><p class="pronouns">['træfɪk 'ɔfɪsə], [ˈtræfɪk ˈwɔːdn̩ ]</p><p class="rus">2. Сотрудник дорожной полиции</p></div>
+      <div><p class="eng">Other</p><p class="pronouns">['ʌðə]</p><p class="rus">Другое </p></div>
+      <div><p class="eng">Driver</p><p class="pronouns">['draɪvə]</p><p class="rus">Водитель </p></div>
+      <div><p class="eng">Pilot</p><p class="pronouns">['paɪlət]</p><p class="rus">Пилот </p></div>
+      <div><p class="eng">Computer programmer</p><p class="pronouns">[kəm'pjuːtə 'prəugræmə]</p><p class="rus">Программист </p></div>
+      <div><p class="eng">Specialist</p><p class="pronouns">['speʃ(ə)lɪst]</p><p class="rus">Специалист </p></div>
+      <div><p class="eng">Car mechanic</p><p class="pronouns">[ka: mɪ'kænɪk]</p><p class="rus">Автомеханик </p></div>
+      <div><p class="eng">Analyst</p><p class="pronouns">['æn(ə)lɪst]</p><p class="rus">Аналитик </p></div>
+      <div><p class="eng">Librarian</p><p class="pronouns">[laɪ'breərɪən]</p><p class="rus">Библиотекарь </p></div>
+      <div><p class="eng">Webmaster</p><p class="pronouns">[web 'mɑːstə]</p><p class="rus">Веб-мастер </p></div>
+      <div><p class="eng">Web developer</p><p class="pronouns">[web dɪ'veləpə]</p><p class="rus">Веб-разработчик </p></div>
+      <div><p class="eng">Consultant</p><p class="pronouns">[kən'sʌlt(ə)nt]</p><p class="rus">Консультант </p></div>
+      <div><p class="eng">Model</p><p class="pronouns">['mɔd(ə)l]</p><p class="rus">Модель </p></div>
+      <div><p class="eng">Hairdresser</p><p class="pronouns">['heəˌdresə]</p><p class="rus">Парикмахер </p></div>
+      <div><p class="eng">Barber</p><p class="pronouns">['bɑːbə]</p><p class="rus">Мужской парикмахер</p></div>
+      <div><p class="eng">Fire-fighter</p><p class="pronouns">['faɪəˌfaɪtə]</p><p class="rus">Пожарный </p></div>
+      <div><p class="eng">Politician</p><p class="pronouns">[ˌpɔlɪ'tɪʃ(ə)n]</p><p class="rus">Политик </p></div>
+      <div><p class="eng">Tailor</p><p class="pronouns">['teɪlə]</p><p class="rus">Портной </p></div>
+      <div><p class="eng">Priest</p><p class="pronouns">[priːst]</p><p class="rus">Священник </p></div>
+      <div><p class="eng">Software, Hardware specialist</p><p class="pronouns">['sɔftweə 'speʃ(ə)lɪst]</p><p class="rus">2. Специалист по софту, по железу</p></div>
+      <div><p class="eng">2. Janitor</p><p class="pronouns">['ʤænɪtə]</p><p class="rus">Уборщик, дворник </p></div>
+      <div><p class="eng">Cleaning lady, woman</p><p class="pronouns">['kliːnɪŋ 'leɪdɪ], ['wumən]</p><p class="rus">2. Уборщица </p></div>
+      <div><p class="eng">Farmer</p><p class="pronouns">['fɑːmə]</p><p class="rus">Фермер </p></div>
+      <div><p class="eng">2. Expert</p><p class="pronouns">['ekspɜːt]</p><p class="rus">Эксперт, мастер </p></div>
+      <div><p class="eng">Body</p><p class="pronouns">[ˈbɑːdi]</p><p class="rus">Тулвище</p></div>
+      <div><p class="eng">Part</p><p class="pronouns">[pɑːrt]</p><p class="rus">Часть</p></div>
+      <div><p class="eng">Appearance</p><p class="pronouns">[əˈpɪrəns]</p><p class="rus">Внешность</p></div>
+      <div><p class="eng">Head</p><p class="pronouns">[ hed ]</p><p class="rus">Голова </p></div>
+      <div><p class="eng">Hair</p><p class="pronouns">[ hɛə ]</p><p class="rus">Волосы </p></div>
+      <div><p class="eng">Eye</p><p class="pronouns">[ ai ]</p><p class="rus">Глаз </p></div>
+      <div><p class="eng">Lips</p><p class="pronouns">[ lips ]</p><p class="rus">Губы </p></div>
+      <div><p class="eng">Tooth, teeth</p><p class="pronouns">[ tu:θ ], [tiːθ]</p><p class="rus">Зуб, зубы</p></div>
+      <div><p class="eng">Face</p><p class="pronouns">[ feis ]</p><p class="rus">Лицо </p></div>
+      <div><p class="eng">Nose</p><p class="pronouns">[ nəuz ]</p><p class="rus">Нос </p></div>
+      <div><p class="eng">Mouth</p><p class="pronouns">[ mauθ ]</p><p class="rus">Рот </p></div>
+      <div><p class="eng">Ear</p><p class="pronouns">[ iə ]</p><p class="rus">Ухо </p></div>
+      <div><p class="eng">Tongue</p><p class="pronouns">[ tʌŋ ]</p><p class="rus">Язык </p></div>
+      <div><p class="eng">Limbs, extremities</p><p class="pronouns">[lɪmz], [ɪk'stremətɪz]</p><p class="rus">2. Конечности </p></div>
+      <div><p class="eng">Arm</p><p class="pronouns">[ ɑ:m ]</p><p class="rus">Рука от плеча до кисти</p></div>
+      <div><p class="eng">Hand</p><p class="pronouns">[ hænd ]</p><p class="rus">Кисть руки </p></div>
+      <div><p class="eng">Finger</p><p class="pronouns">[fɪŋɡə(r) ]</p><p class="rus">Палец руки </p></div>
+      <div><p class="eng">Palm</p><p class="pronouns">[ pɑ:m ]</p><p class="rus">Ладонь </p></div>
+      <div><p class="eng">Shoulder</p><p class="pronouns">[ 'ʃəuldə ]</p><p class="rus">Плечо </p></div>
+      <div><p class="eng">Leg</p><p class="pronouns">[ leg ]</p><p class="rus">Нога до ступни</p></div>
+      <div><p class="eng">Foot, feet</p><p class="pronouns">[ fut ], [ fi:t ]</p><p class="rus">Ступня, ступни</p></div>
+      <div><p class="eng">Breast, Chest</p><p class="pronouns">[ brest ], [tʃest]</p><p class="rus">2. Грудь</p></div>
+      <div><p class="eng">Stomach</p><p class="pronouns">[ 'stʌmək ]</p><p class="rus">Желудок</p></div>
+      <div><p class="eng">Belly</p><p class="pronouns">[ˈbɛlɪ]</p><p class="rus">Живот </p></div>
+      <div><p class="eng">Back</p><p class="pronouns">[ bæk ]</p><p class="rus">Спина </p></div>
+      <div><p class="eng">Waist</p><p class="pronouns">[ weist ]</p><p class="rus">Талия </p></div>
+      <div><p class="eng">2. Neck</p><p class="pronouns">[ nek ]</p><p class="rus">Шея, горлышко (бутылки)</p></div>
+      <div><p class="eng">Buttocks</p><p class="pronouns">[‘bʌtəks]</p><p class="rus">Ягодицы </p></div>
+      <div><p class="eng">Well-built</p><p class="pronouns">[ˌwel'bɪlt]</p><p class="rus">Хорошо сложенный мужчина</p></div>
+      <div><p class="eng">Well-shaped</p><p class="pronouns">[‘welʃeɪpt]</p><p class="rus">Женщина с хорошей фигурой</p></div>
+      <div><p class="eng">Skinny, slender, thin, frail</p><p class="pronouns">[‘skɪnɪ], ['slendə], [θɪn], [freɪl]</p><p class="rus">4. Худой</p></div>
+      <div><p class="eng">Overweight, plump, thick</p><p class="pronouns">[əuvə’weɪt], [plʌmp], [θɪk]</p><p class="rus">3. Толстый, полный </p></div>
+      <div><p class="eng">2. Short</p><p class="pronouns">[ʃɔ:t ]</p><p class="rus">Низкий, короткий</p></div>
+      <div><p class="eng">Low, short</p><p class="pronouns">[ləʊ], [ʃɔːt]</p><p class="rus">2. Низкий</p></div>
+      <div><p class="eng">Tall</p><p class="pronouns">[tɔ:l]</p><p class="rus">Высокий </p></div>
+      <div><p class="eng">Medium height</p><p class="pronouns">[‘mi:dɪəm haɪt]</p><p class="rus">Среднего роста </p></div>
+      <div><p class="eng">Bald, bald-headed</p><p class="pronouns">[bɔ:ld], ['bɔːld'hedɪd]</p><p class="rus">2. Лысый </p></div>
+      <div><p class="eng">Wavy</p><p class="pronouns">[‘weɪvɪ]</p><p class="rus">Волнистые </p></div>
+      <div><p class="eng">Curly</p><p class="pronouns">['kɜːlɪ]</p><p class="rus">Кудрявые </p></div>
+      <div><p class="eng">Gray</p><p class="pronouns">[greɪ]</p><p class="rus">Волосы с проседью</p></div>
+      <div><p class="eng">White</p><p class="pronouns">[wait]</p><p class="rus">Седые волосы</p></div>
+      <div><p class="eng">Blond</p><p class="pronouns">[blɔnd]</p><p class="rus">Блондинистые </p></div>
+      <div><p class="eng">Ginger, red</p><p class="pronouns">['ʤɪnʤə], [red]</p><p class="rus">2. Рыжие </p></div>
+      <div><p class="eng">Shoulder-length</p><p class="pronouns">[ˌʃəuldə'leŋθ]</p><p class="rus">Волосы до плеч</p></div>
+      <div><p class="eng">Braids, plait</p><p class="pronouns">[breɪdz], [plæt]</p><p class="rus">2. Косы </p></div>
+      <div><p class="eng">Lock, curl, ringlet</p><p class="pronouns">[lɔk], [kɜːl], ['rɪŋlɪt]</p><p class="rus">3. Локон, завиток </p></div>
+      <div><p class="eng">Fringe, bangs</p><p class="pronouns">[frɪnʤ], [bæŋz]</p><p class="rus">2. Челка </p></div>
+      <div><p class="eng">Haircut</p><p class="pronouns">[‘hɛəkʌt]</p><p class="rus">Стрижка </p></div>
+      <div><p class="eng">Hairdo, hairstyle</p><p class="pronouns">[‘hɛədu:], [ˈheəˌstaɪl]</p><p class="rus">2. Причёска </p></div>
+      <div><p class="eng">Perm</p><p class="pronouns">[pə:m]</p><p class="rus">Перманентная завивка </p></div>
+      <div><p class="eng">Scanty, thin hair</p><p class="pronouns">['skæntɪ], [θɪn]</p><p class="rus">2. Редкие волосы</p></div>
+      <div><p class="eng">Thick hair</p><p class="pronouns">[θɪk]</p><p class="rus">Густые волосы</p></div>
+      <div><p class="eng">Silky</p><p class="pronouns">['sɪlkɪ]</p><p class="rus">Шелковистые волосы</p></div>
+      <div><p class="eng">Dyed hair</p><p class="pronouns">[daɪd]</p><p class="rus">Крашеные волосы</p></div>
+      <div><p class="eng">Pale skin</p><p class="pronouns">[peɪl skɪn]</p><p class="rus">Бледная кожа </p></div>
+      <div><p class="eng">Sun-tanned</p><p class="pronouns">[sʌn- tænd]</p><p class="rus">Загорелый </p></div>
+      <div><p class="eng">Wrinkles</p><p class="pronouns">[‘rɪŋklz]</p><p class="rus">Морщины </p></div>
+      <div><p class="eng">Mole, beauty mark</p><p class="pronouns">[məul], [ˈbjuːti] [mɑːk]</p><p class="rus">2 Родинка </p></div>
+      <div><p class="eng">Square table</p><p class="pronouns">[skweə]</p><p class="rus">Квадратный стол</p></div>
+      <div><p class="eng">Round</p><p class="pronouns">[raund] </p><p class="rus">Кругый</p></div>
+      <div><p class="eng">Hollow cheeks</p><p class="pronouns">['hɔləu tʃi:ks]</p><p class="rus">Впалые щеки </p></div>
+      <div><p class="eng">Chubby face</p><p class="pronouns">[‘tʃʌbɪ feɪs]</p><p class="rus">Пухлое лицо </p></div>
+      <div><p class="eng">Clean-shaven</p><p class="pronouns">[ˌkliːn'ʃeɪv(ə)n]</p><p class="rus">Чисто выбритый </p></div>
+      <div><p class="eng">Smooth cheeked</p><p class="pronouns">[smuːð ʧiːkt]</p><p class="rus">Гладкощекий</p></div>
+      <div><p class="eng">High cheekbones</p><p class="pronouns">[haɪ ‘tʃi:kbəunz]</p><p class="rus">Высокие скулы </p></div>
+      <div><p class="eng">Freckles</p><p class="pronouns">['freklz]</p><p class="rus">Веснушки </p></div>
+      <div><p class="eng">Dimples</p><p class="pronouns">[‘dɪmplz]</p><p class="rus">Ямочки </p></div>
+      <div><p class="eng">Acne</p><p class="pronouns">[ʹæknı]</p><p class="rus">Угорь на лице</p></div>
+      <div><p class="eng">Scar</p><p class="pronouns">[skɑ:]</p><p class="rus">Шрам </p></div>
+      <div><p class="eng">Prominent ears</p><p class="pronouns">['prɔmɪnənt ɪəz]</p><p class="rus">Оттопыренные уши </p></div>
+      <div><p class="eng">Wart</p><p class="pronouns">[wɔ:t]</p><p class="rus">Бородавкa </p></div>
+      <div><p class="eng">Ear lobe</p><p class="pronouns">[ ɪə ləub]</p><p class="rus">Мочка уха </p></div>
+      <div><p class="eng">Spot, pimple</p><p class="pronouns">[spɔt], [‘pɪmpl]</p><p class="rus">2. Прыщ </p></div>
+      <div><p class="eng">Smile</p><p class="pronouns">[smaɪl]</p><p class="rus">Улыбка </p></div>
+      <div><p class="eng">Emotion icon </p><p class="pronouns">[ɪˈmoʊʃnˈaɪkɒn]</p><p class="rus">Смайлик</p></div>
+      <div><p class="eng">Black eye</p><p class="pronouns">[blæk aɪ]</p><p class="rus">Синяк под глазом </p></div>
+      <div><p class="eng">Dark eyes</p><p class="pronouns">da:rk aɪz]</p><p class="rus">Темные глаза</p></div>
+      <div><p class="eng">Thick, thin eyebrows</p><p class="pronouns">[θɪk], [θɪn 'aɪbrauz]</p><p class="rus">Толстые, тонкие брови </p></div>
+      <div><p class="eng">Long lashes</p><p class="pronouns">[lɔŋ læʃɪz]</p><p class="rus">Длинные ресницы </p></div>
+      <div><p class="eng">False eyelashes</p><p class="pronouns">[fɔ:ls ailæʃɪs]</p><p class="rus">Накладные ресницы </p></div>
+      <div><p class="eng">Wide-set</p><p class="pronouns">[waɪd set]</p><p class="rus">Широко посаженные </p></div>
+      <div><p class="eng">2. Slanting, almond shaped eyes</p><p class="pronouns">['slɑːntɪŋ], [ 'ɑːmənd‘ʃeɪpt aɪz]</p><p class="rus">2. Раскосые, миндалевидные глаза</p></div>
+      <div><p class="eng">Cross eyed, squint-eyed</p><p class="pronouns">[krɔs aɪd], [ˈskwɪntaɪd]</p><p class="rus">2 Косоглазый </p></div>
+      <div><p class="eng">Piggy eyes</p><p class="pronouns">[‘pɪgɪ aɪz]</p><p class="rus">Поросячьи глазки </p></div>
+      <div><p class="eng">Bushy eyelashes</p><p class="pronouns">['buʃɪ]</p><p class="rus">Густые ресницы</p></div>
+      <div><p class="eng">Full lips, thin lips</p><p class="pronouns">[ful], [θɪn lɪps]</p><p class="rus">Полные, тонкие губы </p></div>
+      <div><p class="eng">Upper, lower lip</p><p class="pronouns">['ʌpə], ['ləuə lɪp]</p><p class="rus">Верхняя, нижняя губа </p></div>
+      <div><p class="eng">Crooked nose</p><p class="pronouns">['krukɪd]</p><p class="rus">Изогнутый, кривой нос</p></div>
+      <div><p class="eng">Hooked nose</p><p class="pronouns">[hukt]</p><p class="rus">Крючковатый </p></div>
+      <div><p class="eng">Pug nose</p><p class="pronouns">[pʌg nəuz]</p><p class="rus">Приплюснутый нос </p></div>
+      <div><p class="eng">Bulbous nose</p><p class="pronouns">[‘bʌlbəs nəuz]</p><p class="rus">Нос картошкой </p></div>
+      <div><p class="eng">Snub nose</p><p class="pronouns">[snʌb nəuz]</p><p class="rus">Кирпатый нос </p></div>
+      <div><p class="eng">Chin</p><p class="pronouns">[ʧɪn]</p><p class="rus">Подбородок </p></div>
+      <div><p class="eng">Double chin</p><p class="pronouns">[‘dʌbl ʧɪn]</p><p class="rus">Двойной подбородок</p></div>
+      <div><p class="eng">Pointed chin</p><p class="pronouns">[’pɔɪntɪd ʧɪn]</p><p class="rus">Острый подбородок</p></div>
+      <div><p class="eng">Massive chin</p><p class="pronouns">['mæsɪv ʧɪn]</p><p class="rus">Массивный подбородок</p></div>
+      <div><p class="eng">Protruding chin</p><p class="pronouns">[prə'truːdɪŋ ʧɪn]</p><p class="rus">Выдающийся подбородок</p></div>
+      <div><p class="eng">Round chin</p><p class="pronouns">[raʊnd ʧɪn]</p><p class="rus">Круглый подбородок</p></div>
+      <div><p class="eng">Snow-white teeth</p><p class="pronouns">[‘snəʊ’waɪt ti:θ]</p><p class="rus">Белоснежные зубы </p></div>
+      <div><p class="eng">Large teeth</p><p class="pronouns">[lɑːʤ]</p><p class="rus">Крупные зубы</p></div>
+      <div><p class="eng">Small, tiny teeth</p><p class="pronouns">[smɔːl], ['taɪnɪ]</p><p class="rus">2. Мелкие зубы</p></div>
+      <div><p class="eng">Widely-spaced teeth</p><p class="pronouns">['waɪdlɪ speıst]</p><p class="rus">Редкие зубы</p></div>
+      <div><p class="eng">Even, uneven teeth</p><p class="pronouns">[ʌn'iːv(ə)n], [ʌn'iːv(ə)n]</p><p class="rus">Ровные, неровные зубы</p></div>
+      <div><p class="eng">False teeth</p><p class="pronouns">[fɔ:ls ti:θ]</p><p class="rus">Вставные зубы </p></div>
+      <div><p class="eng">Clothes</p><p class="pronouns">[kloʊðz]</p><p class="rus">Одежда</p></div>
+      <div><p class="eng">Outwear, outer clothing</p><p class="pronouns">[ˌaut'weə], [ˈaʊtə] [ˈkləʊðɪŋ]</p><p class="rus">2 Верхняя одежда </p></div>
+      <div><p class="eng">Сoat, overcoat</p><p class="pronouns">[kəʊt], [ˈəʊvəkəʊt]</p><p class="rus">2. Пальто </p></div>
+      <div><p class="eng">2. Raincoat </p><p class="pronouns">['reɪnkəut]</p><p class="rus">Плащ, дождевик</p></div>
+      <div><p class="eng">2. Jacket</p><p class="pronouns">[‘dʒækɪt]</p><p class="rus">Куртка , пиджак</p></div>
+      <div><p class="eng">Fur coat</p><p class="pronouns">[fɜː kəut]</p><p class="rus">Шуба </p></div>
+      <div><p class="eng">Down jacket, down coat</p><p class="pronouns">[daun ‘dʒækɪt], [daʊn] [kəʊt]</p><p class="rus">2 Пуховик </p></div>
+      <div><p class="eng">Sheepskin coat</p><p class="pronouns">['ʃiːpskɪn kəut]</p><p class="rus">Дублёнка </p></div>
+      <div><p class="eng">Headwear</p><p class="pronouns">['hedgɪə]</p><p class="rus">Головные уборы </p></div>
+      <div><p class="eng">Hat</p><p class="pronouns">[hæt]</p><p class="rus">Шапка</p></div>
+      <div><p class="eng">Cap, flatcap</p><p class="pronouns">[kæp], [flæt] [ˈkæp]</p><p class="rus">2 Кепка </p></div>
+      <div><p class="eng">Beret</p><p class="pronouns">['bereɪ]</p><p class="rus">Берет </p></div>
+      <div><p class="eng">Sun hat, panama</p><p class="pronouns">[sʌn hæt], [ˌpænəˈmɑː]</p><p class="rus">2. Панама </p></div>
+      <div><p class="eng">Upper body</p><p class="pronouns">['ʌpə 'bɔdɪ]</p><p class="rus">Верхняя часть тулвищя </p></div>
+      <div><p class="eng">Shirt</p><p class="pronouns">[ʃ3:t]</p><p class="rus">Рубашка </p></div>
+      <div><p class="eng">T-shirt</p><p class="pronouns">[ti: - ʃ3:t]</p><p class="rus">Футболка </p></div>
+      <div><p class="eng">Jumper</p><p class="pronouns">[‘dʒʌmpə]</p><p class="rus">Джемпер </p></div>
+      <div><p class="eng">Sweater</p><p class="pronouns">[‘swetəʳ]</p><p class="rus">Свитер </p></div>
+      <div><p class="eng">Blouse</p><p class="pronouns">[blaʊz]</p><p class="rus">Блузка </p></div>
+      <div><p class="eng">Tunic</p><p class="pronouns">['tjuːnɪk]</p><p class="rus">Туника </p></div>
+      <div><p class="eng">Cardigan</p><p class="pronouns">['kɑ:dɪgən]</p><p class="rus">Кардиган </p></div>
+      <div><p class="eng">Top</p><p class="pronouns">[tɔp]</p><p class="rus">Топ </p></div>
+      <div><p class="eng">Waistcoat, vest</p><p class="pronouns">['weɪstkəut], [vɛst]</p><p class="rus">2. Жилетка </p></div>
+      <div><p class="eng">Undervest, vest</p><p class="pronouns">[‘ʌndəvɛst]</p><p class="rus">2. Майка </p></div>
+      <div><p class="eng">Lower body</p><p class="pronouns">['ləuə 'bɔdɪ]</p><p class="rus">Нижняя часть тела </p></div>
+      <div><p class="eng">Trousers, pants</p><p class="pronouns">[‘traʊzɪz], [pænts]</p><p class="rus">2. Брюки </p></div>
+      <div><p class="eng">Socks</p><p class="pronouns">[sɔks]</p><p class="rus">Носки </p></div>
+      <div><p class="eng">Skirt</p><p class="pronouns">[sk3:t]</p><p class="rus">Юбка </p></div>
+      <div><p class="eng">Shorts</p><p class="pronouns">[‘ʃɔ:ts]</p><p class="rus">Шорты </p></div>
+      <div><p class="eng">Tights, panty hose</p><p class="pronouns">[taɪts], ['pæntɪhəuz]</p><p class="rus">2. Колготки </p></div>
+      <div><p class="eng">Jeans</p><p class="pronouns">[ʤiːnz]</p><p class="rus">Джинсы </p></div>
+      <div><p class="eng">Leggings</p><p class="pronouns">[‘legɪŋz]</p><p class="rus">Легинсы </p></div>
+      <div><p class="eng">Leg warmers</p><p class="pronouns">[leg wɔ:məz]</p><p class="rus">Гетры </p></div>
+      <div><p class="eng">Stockings, stay ups</p><p class="pronouns">['stɔkɪŋz], [steɪʌps]</p><p class="rus">2. Чулки </p></div>
+      <div><p class="eng">Whole </p><p class="pronouns">[həul]</p><p class="rus">Все, что-то полностью</p></div>
+      <div><p class="eng">Dress</p><p class="pronouns">[dres]</p><p class="rus">Платье </p></div>
+      <div><p class="eng">Suit</p><p class="pronouns">[su:t]</p><p class="rus">Костюм </p></div>
+      <div><p class="eng">Overall, coveralls, boiler suit</p><p class="pronouns">[‘əʊvərɔ:l], ['kʌv(ə)rɔːlz], [ˈbɔɪlə] [sjuːt]</p><p class="rus">3. Комбинезон </p></div>
+      <div><p class="eng">Trouser suit, slack suit, pantsuit</p><p class="pronouns">['trauzə su:t], [slæk su:t], ['pænt s(j)uːt]</p><p class="rus">3. Брючный костюм </p></div>
+      <div><p class="eng">Skirt suit</p><p class="pronouns">[skɜːt su:t]</p><p class="rus">Женский костюм (с юбкой) </p></div>
+      <div><p class="eng">Pinafore-dress, sundress</p><p class="pronouns">['pɪnəfɔ: dres], [ˈsʌndrɛs]</p><p class="rus">2. Сарафан </p></div>
+      <div><p class="eng">Robe, Dressing-gown, bathrobe</p><p class="pronouns">[rəʊb], ['dresɪŋ gaun], [ˈbɑːθrəʊb]</p><p class="rus">3. Халат </p></div>
+      <div><p class="eng">Underwear</p><p class="pronouns">['ʌndəweə]</p><p class="rus">Нижнее бельё </p></div>
+      <div><p class="eng">Bra</p><p class="pronouns">[brɑ:]</p><p class="rus">Бюстгальтер </p></div>
+      <div><p class="eng">Underpants, Boxers</p><p class="pronouns">['ʌndəpænts], ['bɔksəz]</p><p class="rus">2. Мужские трусы </p></div>
+      <div><p class="eng">Panties</p><p class="pronouns">['pæntɪz]</p><p class="rus">Женские или детские трусики</p></div>
+      <div><p class="eng">Bikini, swimsuit</p><p class="pronouns">[bɪ'kiːnɪ], [swɪms(j)uːt]</p><p class="rus">2. Купальник </p></div>
+      <div><p class="eng">Footwear</p><p class="pronouns">['futweə]</p><p class="rus">Обувь </p></div>
+      <div><p class="eng">2. Shoes</p><p class="pronouns">[ʃu:z]</p><p class="rus">Туфли, ботинки </p></div>
+      <div><p class="eng">2. Boots</p><p class="pronouns">[bu:ts],</p><p class="rus">Ботинки, сапоги </p></div>
+      <div><p class="eng">High heels</p><p class="pronouns">[haɪ hi:lz]</p><p class="rus">Туфли на высоком каблуке </p></div>
+      <div><p class="eng">Low heels</p><p class="pronouns">[ləu hi:lz]</p><p class="rus">Туфли на низком каблуке </p></div>
+      <div><p class="eng">Trainers, sneakers</p><p class="pronouns">['treɪnəz], ['sni:kəz]</p><p class="rus">2. Кроссовки </p></div>
+      <div><p class="eng">Flats</p><p class="pronouns">[flæts]</p><p class="rus">Обувь на низкой подошве </p></div>
+      <div><p class="eng">Sandals</p><p class="pronouns">[‘sændlz]</p><p class="rus">Сандалии </p></div>
+      <div><p class="eng">Flip-flops</p><p class="pronouns">[flɪp- flɔps]</p><p class="rus">Шлёпки </p></div>
+      <div><p class="eng">Slippers</p><p class="pronouns">[‘slɪpəz]</p><p class="rus">Домашние тапочки </p></div>
+      <div><p class="eng">Stiletto heels</p><p class="pronouns">[stɪ'letəu hi:lz]</p><p class="rus">Обувь на шпильках </p></div>
+      <div><p class="eng">Sole</p><p class="pronouns">[səul]</p><p class="rus">Подошва </p></div>
+      <div><p class="eng">Platform sole</p><p class="pronouns">['plætfɔːm səul]</p><p class="rus">Платформа </p></div>
+      <div><p class="eng">Platform shoes</p><p class="pronouns">['plætfɔːm ʃu:z]</p><p class="rus">Туфли на платформе </p></div>
+      <div><p class="eng">Western boots, cowboy boots</p><p class="pronouns">['westən buːts], ['kaubɔɪ buːts]</p><p class="rus">2. Ковбойские сапоги </p></div>
+      <div><p class="eng">Hiking boots</p><p class="pronouns">['haɪkɪŋ buːts]</p><p class="rus">Туристические ботинки </p></div>
+      <div><p class="eng">Moccasins</p><p class="pronouns">['mɔkəsɪnz]</p><p class="rus">Мокасины </p></div>
+      <div><p class="eng">Tennis shoes</p><p class="pronouns">['tenɪs ʃu:z]</p><p class="rus">Тенниски </p></div>
+      <div><p class="eng">Accessories</p><p class="pronouns">[ək'ses(ə)rɪz]</p><p class="rus">Аксессуары </p></div>
+      <div><p class="eng">Glasses</p><p class="pronouns">[glɑ:sɪz]</p><p class="rus">Очки </p></div>
+      <div><p class="eng">Scarf</p><p class="pronouns">[skɑ:f]</p><p class="rus">Шарф </p></div>
+      <div><p class="eng">Tie</p><p class="pronouns">[taɪ]</p><p class="rus">Галстук </p></div>
+      <div><p class="eng">Ring</p><p class="pronouns">[rɪŋ]</p><p class="rus">Кольцо </p></div>
+      <div><p class="eng">Purse, wallet</p><p class="pronouns">[pə:s], [‘wɒlɪt]</p><p class="rus">2. Кошелек </p></div>
+      <div><p class="eng">Bracelet</p><p class="pronouns">['breɪslɪt]</p><p class="rus">Браслет </p></div>
+      <div><p class="eng">Chain</p><p class="pronouns">[tʃeɪn]</p><p class="rus">Цепочка </p></div>
+      <div><p class="eng">Necklace</p><p class="pronouns">[‘neklɪs]</p><p class="rus">Ожерелье </p></div>
+      <div><p class="eng">Sunglasses</p><p class="pronouns">[‘sʌnˌglɑ:sɪz]</p><p class="rus">Солнечные очки </p></div>
+      <div><p class="eng">Pins, earrings</p><p class="pronouns">[pɪnz], ['ɪərɪŋz]</p><p class="rus">2. Серьги </p></div>
+      <div><p class="eng">Handbag</p><p class="pronouns">[‘hændbæg]</p><p class="rus">Женская сумка </p></div>
+      <div><p class="eng">Jewellery</p><p class="pronouns">[‘dʒu:əlrɪ]</p><p class="rus">Драгоценности </p></div>
+      <div><p class="eng">Bijouterie</p><p class="pronouns">[bɪ'ʒu:tərɪ]</p><p class="rus">Бижутерия </p></div>
+      <div><p class="eng">2. Hair-band</p><p class="pronouns">[hɛəʳ- bænd]</p><p class="rus">Обруч, повязка на голову </p></div>
+      <div><p class="eng">Clutch</p><p class="pronouns">[klʌtʃ]</p><p class="rus">Сумка-клатч </p></div>
+      <div><p class="eng">Brooch</p><p class="pronouns">[brəuʧ]</p><p class="rus">Брошь </p></div>
+      <div><p class="eng">Bow-tie</p><p class="pronouns">[baʊ- taɪ]</p><p class="rus">Бабочка </p></div>
+      <div><p class="eng">Style</p><p class="pronouns">[staɪl]</p><p class="rus">Стиль </p></div>
+      <div><p class="eng">Sleeve</p><p class="pronouns">[sli:v]</p><p class="rus">Рукав </p></div>
+      <div><p class="eng">Print</p><p class="pronouns">[prɪnt]</p><p class="rus">Принт, рисунок на одежде</p></div>
+      <div><p class="eng">V-neck</p><p class="pronouns">[vi- nek]</p><p class="rus">V вырез </p></div>
+      <div><p class="eng">Mini, midi, maxi skirt</p><p class="pronouns">[mini, ’mɪdɪ, maksi sk3:t]</p><p class="rus">Мини, миди, макси юбка</p></div>
+      <div><p class="eng">Pleated dress</p><p class="pronouns">[pli:tid dres]</p><p class="rus">Платье в складку </p></div>
+      <div><p class="eng">Round-neck</p><p class="pronouns">[raund nek]</p><p class="rus">Круглый вырез </p></div>
+      <div><p class="eng">Full-skirt</p><p class="pronouns">[ful- sk3:t]</p><p class="rus">Пышная юбка </p></div>
+      <div><p class="eng">Cotton (material)</p><p class="pronouns">['kɔt(ə)n]</p><p class="rus">Хлопок </p></div>
+      <div><p class="eng">Denim</p><p class="pronouns">['denɪm]</p><p class="rus">Джинсовая ткань </p></div>
+      <div><p class="eng">Wool</p><p class="pronouns">[wul]</p><p class="rus">Шерсть </p></div>
+      <div><p class="eng">Leather (material)</p><p class="pronouns">[‘leðəʳ]</p><p class="rus">Кожа материал</p></div>
+      <div><p class="eng">Fur</p><p class="pronouns">[fə:r]</p><p class="rus">Мех </p></div>
+      <div><p class="eng">Silk</p><p class="pronouns">[sɪlk]</p><p class="rus">Шелк </p></div>
+      <div><p class="eng">Velvet</p><p class="pronouns">['velvɪt]</p><p class="rus">Бархат </p></div>
+      <div><p class="eng">Knitted</p><p class="pronouns">['nɪtɪd]</p><p class="rus">Вязанный </p></div>
+      <div><p class="eng">Fake fur, Fake leather</p><p class="pronouns">[feɪk fə:r, ’leðəʳ]</p><p class="rus">Искусственный мех, кожзам</p></div>
+      <div><p class="eng">Polyester</p><p class="pronouns">[pɔlɪ’ɛstər]</p><p class="rus">Полиэстер </p></div>
+      <div><p class="eng">Colour</p><p class="pronouns">['kʌlə]</p><p class="rus">Цвет </p></div>
+      <div><p class="eng">Red</p><p class="pronouns">[rɛd]</p><p class="rus">Красный </p></div>
+      <div><p class="eng">Orange</p><p class="pronouns">[‘ɒrɪndʒ]</p><p class="rus">Оранжевый </p></div>
+      <div><p class="eng">Green</p><p class="pronouns">[gri:n]</p><p class="rus">Зеленый </p></div>
+      <div><p class="eng">Blue</p><p class="pronouns">[blu:]</p><p class="rus">Синий </p></div>
+      <div><p class="eng">Light blue</p><p class="pronouns">[laɪt blu:]</p><p class="rus">Голубой </p></div>
+      <div><p class="eng">Black</p><p class="pronouns">[blæk]</p><p class="rus">Черный </p></div>
+      <div><p class="eng">Brown</p><p class="pronouns">[braʊn]</p><p class="rus">Коричневый </p></div>
+      <div><p class="eng">White</p><p class="pronouns">[waɪt]</p><p class="rus">Белый </p></div>
+      <div><p class="eng">Navy</p><p class="pronouns">[‘neɪvɪ]</p><p class="rus">Темно-синий </p></div>
+      <div><p class="eng">Purple, violet</p><p class="pronouns">[‘p3:pl], [ˈvaɪəlɪt]</p><p class="rus">2. Фиолетовый</p></div>
+      <div><p class="eng">Actions</p><p class="pronouns">['ækʃ(ə)nz]</p><p class="rus">Дії </p></div>
+      <div><p class="eng">To put smth on</p><p class="pronouns">[pʊt smth ɒn]</p><p class="rus">Надевать что-то </p></div>
+      <div><p class="eng">To take smth off</p><p class="pronouns">[teɪk smth ɒf]</p><p class="rus">Снимать з себя</p></div>
+      <div><p class="eng">To wear</p><p class="pronouns">[wɛə]</p><p class="rus">Носить одежду или украшения</p></div>
+      <div><p class="eng">To try on</p><p class="pronouns">[ʹtraı ɒn]</p><p class="rus">Примерять </p></div>
+      <div><p class="eng">To change clothes</p><p class="pronouns">[ʧeɪnʤ kləuðz]</p><p class="rus">Переодеваться </p></div>
+      <div><p class="eng">To dress, to get dressed</p><p class="pronouns">[dress], [get dresst]</p><p class="rus">2. Одеваться </p></div>
+      <div><p class="eng">To undress, to get undressed</p><p class="pronouns">[ʌn'dres], [get ʌn'drest]</p><p class="rus">2. Раздеваться </p></div>
+      <div><p class="eng">To dress up</p><p class="pronouns">[dres ʌp]</p><p class="rus">Одеваться на выход</p></div>
+      <div><p class="eng">To fit</p><p class="pronouns">[fɪt]</p><p class="rus">Подходить о фасоне или размере</p></div>
+      <div><p class="eng">To suit</p><p class="pronouns">[s(j)u:t]</p><p class="rus">Лычыты</p></div>
+      <div><p class="eng">To match</p><p class="pronouns">[mætʃ]</p><p class="rus">Гармонировать</p></div>
+      <div><p class="eng">Smart clothes</p><p class="pronouns">[smɑːt kləuðz]</p><p class="rus">Нарядная одежда </p></div>
+      <div><p class="eng">Evening gown</p><p class="pronouns">['i:vnɪŋ gaun]</p><p class="rus">Вечернее платье </p></div>
+      <div><p class="eng">Tux, tuxedo, Dinner jacket</p><p class="pronouns">[tʌks], [tʌk'si:dəu], ['dɪnə 'ʤækɪt]</p><p class="rus">3. Смокинг </p></div>
+      <div><p class="eng">Sweatpants</p><p class="pronouns">['swetpænts]</p><p class="rus">Тренировочные штаны</p></div>
+      <div><p class="eng">Home clothing </p><p class="pronouns">[həum 'kləuðɪŋ]</p><p class="rus">Домашняя одежда </p></div>
+      <div><p class="eng">Pyjamas </p><p class="pronouns">[pɪ'ʤɑ:məz]</p><p class="rus">Пижама </p></div>
+      <div><p class="eng">Pattern </p><p class="pronouns">['pæt(ə)n]</p><p class="rus">Узор </p></div>
+      <div><p class="eng">Striped </p><p class="pronouns">[straɪpt]</p><p class="rus">В полоску </p></div>
+      <div><p class="eng">Checked </p><p class="pronouns">[ʧekt]</p><p class="rus">В клеточку </p></div>
+      <div><p class="eng">Flowery, floral </p><p class="pronouns">['flauərɪ], ['flɔ:r(ə)l]</p><p class="rus">2. Цветастый </p></div>
+      <div><p class="eng">Polka dot </p><p class="pronouns">['pɔlkə dɔt]</p><p class="rus">В горошек </p></div>
+      <div><p class="eng">Camouflage </p><p class="pronouns">['kæməflɑ:ʒ]</p><p class="rus">Камуфляж </p></div>
+      <div><p class="eng">2. Plain </p><p class="pronouns">[pleɪn]</p><p class="rus">Без рисунка, одноцветный </p></div>
+      <div><p class="eng">Description </p><p class="pronouns">[dɪ'skrɪpʃ(ə)n]</p><p class="rus">Описание </p></div>
+      <div><p class="eng">Elegant </p><p class="pronouns">['elɪg(ə)nt]</p><p class="rus">Элегантный </p></div>
+      <div><p class="eng">Casual </p><p class="pronouns">['kæʒwəl]</p><p class="rus">Повседневный </p></div>
+      <div><p class="eng">Tight </p><p class="pronouns">[taɪt]</p><p class="rus">Плотно облегающий </p></div>
+      <div><p class="eng">Baggy </p><p class="pronouns">['bægɪ]</p><p class="rus">Мешковатый </p></div>
+      <div><p class="eng">Loose clothes</p><p class="pronouns">[lu:s]</p><p class="rus">Свободная одежда</p></div>
+      <div><p class="eng">Fashionable </p><p class="pronouns">['fæʃ(ə)nəb(ə)l]</p><p class="rus">Модный </p></div>
+      <div><p class="eng">Button </p><p class="pronouns">[‘bʌt (ə)n]</p><p class="rus">Пуговица </p></div>
+      <div><p class="eng">Pocket </p><p class="pronouns">['pɔkɪt]</p><p class="rus">Карман </p></div>
+      <div><p class="eng">Collar </p><p class="pronouns">[‘kɔlə]</p><p class="rus">Воротник </p></div>
+      <div><p class="eng">Belt </p><p class="pronouns">[belt]</p><p class="rus">Ремень </p></div>
+      <div><p class="eng">Gloves </p><p class="pronouns">[glʌvz]</p><p class="rus">Перчатки </p></div>
+      <div><p class="eng">Ribbon </p><p class="pronouns">['rɪb(ə)n]</p><p class="rus">Лента </p></div>
+      <div><p class="eng">Hood </p><p class="pronouns">[hud]</p><p class="rus">Капюшон </p></div>
+      <div><p class="eng">Handkerchief </p><p class="pronouns">['hæŋkəʧi:f]</p><p class="rus">Носовой платок </p></div>
+      <div><p class="eng">Zip </p><p class="pronouns">[zɪp]</p><p class="rus">Молния </p></div>
+      <div><p class="eng">To wash hands or face</p><p class="pronouns">[ wɒʃ hændz, feɪs ]</p><p class="rus">Мыть руки или лицо</p></div>
+      <div><p class="eng">To clean teeth, to brush teeth </p><p class="pronouns">[ kliːn (brʌʃ) tiːθ ]</p><p class="rus">2. Чистить зубы </p></div>
+      <div><p class="eng">To take a shower </p><p class="pronouns">[ teɪk ə ‘ʃaʊə ]</p><p class="rus">Принимать душ </p></div>
+      <div><p class="eng">To take a bath </p><p class="pronouns">[ teɪk ə bɑːθ ]</p><p class="rus">Принимать ванну </p></div>
+      <div><p class="eng">To have breakfast, lunch, dinner, supper</p><p class="pronouns">[ həv ‘brekfəst, lʌntʃ, ‘dɪnə, ‘sʌpə ]</p><p class="rus">Снидать, обедать, ужинать</p></div>
+      <div><p class="eng">3. To leave </p><p class="pronouns">[ li:v ]</p><p class="rus">Уходить, оставлять, покидать</p></div>
+      <div><p class="eng">To leave work </p><p class="pronouns">[ li:v ‘wɜːk ]</p><p class="rus">Уходить с работы </p></div>
+      <div><p class="eng">To leave for work </p><p class="pronouns">[ li:v fə ‘wɜːk ]</p><p class="rus">Уходить на работу </p></div>
+      <div><p class="eng">To leave home for work </p><p class="pronouns">[ li:v həʊm fə ‘wɜ:k ]</p><p class="rus">Уходить из дома на работу </p></div>
+      <div><p class="eng">To go shopping, to do shopping </p><p class="pronouns">[ ɡəʊ ‘ʃɒpɪŋ], [du: ‘ʃɒpɪŋ ]</p><p class="rus">Ходить за покупками, делать покупки</p></div>
+      <div><p class="eng">To watch TV </p><p class="pronouns">[ wɒtʃ ˌti:’vi: ]</p><p class="rus">Смотреть ТВ </p></div>
+      <div><p class="eng">To surf the net </p><p class="pronouns">[ sɜ:f ðə net ]</p><p class="rus">Сидеть в интернете </p></div>
+      <div><p class="eng">To use a computer </p><p class="pronouns">[ ‘ju:z ə kəm’pju:tə ]</p><p class="rus">Пользоваться компьютером</p></div>
+      <div><p class="eng">To listen to music </p><p class="pronouns">[ ‘lɪsn̩ tə ‘mju:zɪk ]</p><p class="rus">Слушать музыку </p></div>
+      <div><p class="eng">To visit friends </p><p class="pronouns">[‘vɪzɪt frendz ]</p><p class="rus">Ходить в гости к друзьям </p></div>
+      <div><p class="eng">To receive guests </p><p class="pronouns">[ri’si:v gests]</p><p class="rus">Принимать гостей </p></div>
+      <div><p class="eng">To play games or cards </p><p class="pronouns">[pleɪ ɡeɪmz, kɑ:dz ]</p><p class="rus">Играть в игры или карты </p></div>
+      <div><p class="eng">To have a lunch break </p><p class="pronouns">[həv ə lʌntʃbreɪk ]</p><p class="rus">Иметь обеденну пшерву</p></div>
+      <div><p class="eng">To come back, to return</p><p class="pronouns">[ kʌm ‘bæk], [rɪ’tɜ:n ]</p><p class="rus">2. Возвращаться </p></div>
+      <div><p class="eng">Before going to bed </p><p class="pronouns">[ bɪ’fɔ: ‘ɡəʊɪŋ tə bed ]</p><p class="rus">Перед тем как ложиться спать</p></div>
+      <div><p class="eng">To read before sleeping </p><p class="pronouns">[ ri:d bɪ’fɔ: ‘sli:pɪŋ ]</p><p class="rus">Читать перед сном </p></div>
+      <div><p class="eng">To go to bed </p><p class="pronouns">[ ɡəʊ tə bed ]</p><p class="rus">Ложиться спать </p></div>
+      <div><p class="eng">To fall asleep </p><p class="pronouns">[ fɔ:l ə’sli:p ]</p><p class="rus">Засыпать </p></div>
+      <div><p class="eng">To mow a lawn </p><p class="pronouns">[ maʊ ə lɔ:n ]</p><p class="rus">Стричь газон </p></div>
+      <div><p class="eng">To dig </p><p class="pronouns">[ dɪɡ ]</p><p class="rus">Копать </p></div>
+      <div><p class="eng">To pull weeds </p><p class="pronouns">[ pʊl wi:dz ]</p><p class="rus">Полоть сорняки </p></div>
+      <div><p class="eng">To water, to irrigate </p><p class="pronouns">[ ‘wɔ:tə ], [‘ɪrɪɡeɪt ]</p><p class="rus">2. Поливать </p></div>
+      <div><p class="eng">To go on foot, to walk, to have a stroll</p><p class="pronouns">[ɡəʊ ɒn fʊt], [wɔ:k], [həv ə strəʊl]</p><p class="rus">3. Прогуливаться</p></div>
+      <div><p class="eng">To fatten, To nourish </p><p class="pronouns">[‘fæt(ə)n̩], [‘nʌrɪʃ ]</p><p class="rus">2. Удобрять </p></div>
+      <div><p class="eng">To do the washing </p><p class="pronouns">[duː ðə ˈwɒʃɪŋ]</p><p class="rus">Делать стирку</p></div>
+      <div><p class="eng">2. To wash </p><p class="pronouns">[wɒʃ]</p><p class="rus">Стирать, мыть </p></div>
+      <div><p class="eng">2. Laundry </p><p class="pronouns">[ˈlɔːndri ]</p><p class="rus">Бельё для стирки, Прачечная </p></div>
+      <div><p class="eng">To iron, do the ironing </p><p class="pronouns">[ˈaɪən], [duː ðɪ ˈaɪənɪŋ]</p><p class="rus">2. Гладить </p></div>
+      <div><p class="eng">To sort out </p><p class="pronouns">[sɔːt aʊt]</p><p class="rus">Рассортировать </p></div>
+      <div><p class="eng">Washing powder </p><p class="pronouns">[ˈwɒʃɪŋ ˈpaʊdə]</p><p class="rus">Стиральный порошок </p></div>
+      <div><p class="eng">Tub </p><p class="pronouns">[tʌb]</p><p class="rus">Бак стиральной машины</p></div>
+      <div><p class="eng">Basin </p><p class="pronouns">[ˈbeɪsn ]</p><p class="rus">Таз </p></div>
+      <div><p class="eng">Chores in the kitchen </p><p class="pronouns">[tʃɔːz in ðə 'kɪtʃɪn]</p><p class="rus">Домашние обязанности на кухне</p></div>
+      <div><p class="eng">To cook </p><p class="pronouns">[kʊk]</p><p class="rus">Готовить </p></div>
+      <div><p class="eng">To do the dishes, to wash up </p><p class="pronouns">[duː ðə dɪʃɪz ], [wɒʃ ʌp]</p><p class="rus">2. Мыть посуду </p></div>
+      <div><p class="eng">Sponge </p><p class="pronouns">[spʌndʒ ]</p><p class="rus">Губка </p></div>
+      <div><p class="eng">To lay the table </p><p class="pronouns">[leɪ ðə ˈteɪbl]</p><p class="rus">Накрывать на стол </p></div>
+      <div><p class="eng">Housekeeping </p><p class="pronouns">[ˈhaʊskiːpɪŋ]</p><p class="rus">Ведение домашнего хозяйства </p></div>
+      <div><p class="eng">To keep house, to run the house </p><p class="pronouns">[kiːp haʊs ], [rʌn ðə haʊs ]</p><p class="rus">2. Вести домашнее хозяйство </p></div>
+      <div><p class="eng">Domestic chores </p><p class="pronouns">[dəˈmestɪk tʃɔːz]</p><p class="rus">Домашние обязанности </p></div>
+      <div><p class="eng">Housewife </p><p class="pronouns">[ˈhaʊswaɪf ]</p><p class="rus">Домохозяйка </p></div>
+      <div><p class="eng">To air the room</p><p class="pronouns">[eə (ðə ruːm)]</p><p class="rus">Проветривать комнату</p></div>
+      <div><p class="eng">Mess </p><p class="pronouns">[mes]</p><p class="rus">Беспорядок </p></div>
+      <div><p class="eng">Dirt </p><p class="pronouns">[dɜːt]</p><p class="rus">Грязь </p></div>
+      <div><p class="eng">Dirty </p><p class="pronouns">[ˈdɜːti]</p><p class="rus">Грязный </p></div>
+      <div><p class="eng">Dust </p><p class="pronouns">[dʌst ]</p><p class="rus">Пыль </p></div>
+      <div><p class="eng">To make a mess </p><p class="pronouns">[meɪk ə mes]</p><p class="rus">Устраивать беспорядок </p></div>
+      <div><p class="eng">Footmark </p><p class="pronouns">[ˈfʊtmɑːk]</p><p class="rus">След ноги </p></div>
+      <div><p class="eng">Stain </p><p class="pronouns">[steɪn]</p><p class="rus">Пятно </p></div>
+      <div><p class="eng">Rubbish, garbage</p><p class="pronouns">[ˈrʌbɪʃ], [ˈɡɑːbɪdʒ]</p><p class="rus">2. Мусор </p></div>
+      <div><p class="eng">To spill </p><p class="pronouns">[spɪl]</p><p class="rus">Пролить </p></div>
+      <div><p class="eng">to spill out</p><p class="pronouns">[əʊ] [spɪl] [aʊt]</p><p class="rus">Пролиться</p></div>
+      <div><p class="eng">2. Cleaning </p><p class="pronouns">[ˈkliːnɪŋ ]</p><p class="rus">Уборка, порядок </p></div>
+      <div><p class="eng">To clean </p><p class="pronouns">[kliːn ]</p><p class="rus">Чистить, прибирать</p></div>
+      <div><p class="eng">To clean, to wash the floor </p><p class="pronouns">[kliːn, wɒʃ ðə flɔː(r) ]</p><p class="rus">2. Мыть пол </p></div>
+      <div><p class="eng">To do the cleaning </p><p class="pronouns">[duː ðə ˈkliːnɪŋ ]</p><p class="rus">Делать уборку </p></div>
+      <div><p class="eng">To take the garbage out </p><p class="pronouns">[teɪk ðə ˈɡɑːbɪdʒ aʊt]</p><p class="rus">Выносить мусор </p></div>
+      <div><p class="eng">To make the bed </p><p class="pronouns">[meɪk ðə bed]</p><p class="rus">Заправлять кровать </p></div>
+      <div><p class="eng">Broom </p><p class="pronouns">[bruːm]</p><p class="rus">Метла, веник </p></div>
+      <div><p class="eng">Brush </p><p class="pronouns">[brʌʃ]</p><p class="rus">Щётка </p></div>
+      <div><p class="eng">To dust </p><p class="pronouns">[dʌst]</p><p class="rus">Вытирать пыль </p></div>
+      <div><p class="eng">Duster </p><p class="pronouns">[ˈdʌstə(r)]</p><p class="rus">Тряпка для вытирания пыли</p></div>
+      <div><p class="eng">Dustpan </p><p class="pronouns">[ˈdʌstpæn]</p><p class="rus">Совок </p></div>
+      <div><p class="eng">To scrub </p><p class="pronouns">[skrʌb]</p><p class="rus">Щёткой тереть </p></div>
+      <div><p class="eng">Cleanser </p><p class="pronouns">[ˈklenzə(r)]</p><p class="rus">Моющее средство</p></div>
+      <div><p class="eng">Apron </p><p class="pronouns">[ˈeɪprən]</p><p class="rus">Фартук </p></div>
+      <div><p class="eng">Mop</p><p class="pronouns">[mɒp]</p><p class="rus">Швабра </p></div>
+      <div><p class="eng">Dustbin </p><p class="pronouns">[ˈdʌstbɪn]</p><p class="rus">Мусорное ведро </p></div>
+      <div><p class="eng">To sweep the floor </p><p class="pronouns">[swiːp ðə flɔː(r) ]</p><p class="rus">Подметать пол </p></div>
+      <div><p class="eng">To vacuum </p><p class="pronouns">[ˈvækjuəm]</p><p class="rus">Пылесосить</p></div>
+      <div><p class="eng">to love </p><p class="pronouns">[ lʌv ]</p><p class="rus">Любить </p></div>
+      <div><p class="eng">Adore </p><p class="pronouns">[ə'dɔː]</p><p class="rus">Обожать </p></div>
+      <div><p class="eng">to Hear </p><p class="pronouns">[ hiə ]</p><p class="rus">Слышать </p></div>
+      <div><p class="eng">to See </p><p class="pronouns">[ si: ]</p><p class="rus">Смотреть </p></div>
+      <div><p class="eng">to Remember </p><p class="pronouns">[ ri'membə ]</p><p class="rus">Помнить </p></div>
+      <div><p class="eng">to Need </p><p class="pronouns">[ ni:d ]</p><p class="rus">Нуждаться </p></div>
+      <div><p class="eng">to Know </p><p class="pronouns">[ nəu ]</p><p class="rus">Знать </p></div>
+      <div><p class="eng">to Feel, to Sense </p><p class="pronouns">[ fi:l ], [ sens ]</p><p class="rus">2. Гувствовать </p></div>
+      <div><p class="eng">to Mean </p><p class="pronouns">[ mi:n ]</p><p class="rus">Значить, означать </p></div>
+      <div><p class="eng">to imagine </p><p class="pronouns">[ imæʤin ]</p><p class="rus">Вообразить </p></div>
+      <div><p class="eng">3. to Recognize </p><p class="pronouns">[ 'rekəgnaiz ]</p><p class="rus">Признавать, узнавать, опознавать </p></div>
+      <div><p class="eng">2. to Believe </p><p class="pronouns">[ bi'li:v ]</p><p class="rus">Верить, полагать </p></div>
+      <div><p class="eng">to Agree </p><p class="pronouns">[ ə'gri: ]</p><p class="rus">Соглашаться </p></div>
+      <div><p class="eng">to Seem </p><p class="pronouns">[ si:m ]</p><p class="rus">Казаться </p></div>
+      <div><p class="eng">to Appear </p><p class="pronouns">[ ə'piə ]</p><p class="rus">Появляться </p></div>
+      <div><p class="eng">to Care (for) </p><p class="pronouns">[keə]</p><p class="rus">Заботиться (о) </p></div>
+      <div><p class="eng">to Consist </p><p class="pronouns">[ kən'sist ]</p><p class="rus">Состоять </p></div>
+      <div><p class="eng">to Contain </p><p class="pronouns">[ kən'tein ]</p><p class="rus">Содержать </p></div>
+      <div><p class="eng">to Deny </p><p class="pronouns">[ di'nai ]</p><p class="rus">Отрицать </p></div>
+      <div><p class="eng">to Depend </p><p class="pronouns">[ di'pend ]</p><p class="rus">Зависеть </p></div>
+      <div><p class="eng">to Impress </p><p class="pronouns">[ 'impres ]</p><p class="rus">Впечатлять </p></div>
+      <div><p class="eng">to Include </p><p class="pronouns">[ in'klu:d ]</p><p class="rus">Включать (в том числе)</p></div>
+      <div><p class="eng">to Matter </p><p class="pronouns">[ 'mætə ]</p><p class="rus">Иметь значение </p></div>
+      <div><p class="eng">to Notice </p><p class="pronouns">[ 'nəutis ]</p><p class="rus">Замечать </p></div>
+      <div><p class="eng">to Possess </p><p class="pronouns">[ pə'zes ]</p><p class="rus">Обладать </p></div>
+      <div><p class="eng">to Prefer </p><p class="pronouns">[ pri:fə: ]</p><p class="rus">Предпочитать </p></div>
+      <div><p class="eng">to Realise </p><p class="pronouns">[ 'riəlaiz ]</p><p class="rus">Реализовать </p></div>
+      <div><p class="eng">Verb</p><p class="pronouns">[vɜːrb]</p><p class="rus">Глагол</p></div>
+      <div><p class="eng">to Choose </p><p class="pronouns">[tʃuːz]</p><p class="rus">Выбирать </p></div>
+      <div><p class="eng">to Create </p><p class="pronouns">[krɪˈeɪt]</p><p class="rus">Создавать </p></div>
+      <div><p class="eng">to Hope </p><p class="pronouns">[həʊp]</p><p class="rus">Надеятся </p></div>
+      <div><p class="eng">to Be mistaken </p><p class="pronouns">[ˈbiː mɪˈsteɪkən]</p><p class="rus">Ошибаться </p></div>
+      <div><p class="eng">to Be late </p><p class="pronouns">[‘biː leɪt]</p><p class="rus">Опаздывать </p></div>
+      <div><p class="eng">to Be busy </p><p class="pronouns">[ˈbiː ˈbɪzɪ]</p><p class="rus">Быть занятым </p></div>
+      <div><p class="eng">to Discuss </p><p class="pronouns">[dɪsˈkʌs]</p><p class="rus">Обсуждать </p></div>
+      <div><p class="eng">to Forbid </p><p class="pronouns">[fəˈbɪd]</p><p class="rus">Запрещать </p></div>
+      <div><p class="eng">to Consider, to Suppose</p><p class="pronouns">[kənˈsɪdə], [səˈpəʊz]</p><p class="rus">2. Считать, Полагать </p></div>
+      <div><p class="eng">to Regard </p><p class="pronouns">[rɪˈɡɑːd]</p><p class="rus">Расценивать, рассматривать</p></div>
+      <div><p class="eng">to Rely </p><p class="pronouns">[rɪˈlaɪ]</p><p class="rus">Полагаться </p></div>
+      <div><p class="eng">to Achieve </p><p class="pronouns">[əˈtʃiːv]</p><p class="rus">Достигать </p></div>
+      <div><p class="eng">to Critisize </p><p class="pronouns">[ˈkrɪtɪsaɪz]</p><p class="rus">Критиковать </p></div>
+      <div><p class="eng">to Blame </p><p class="pronouns">[bleɪm]</p><p class="rus">Винить </p></div>
+      <div><p class="eng">to accuse</p><p class="pronouns">[tʊ] [əˈkjuːz]</p><p class="rus">обвинять</p></div>
+      <div><p class="eng">accusation</p><p class="pronouns">[ˌækju(ː)ˈzeɪʃ(ə)n]</p><p class="rus">обвинение</p></div>
+      <div><p class="eng">to Accept </p><p class="pronouns">[əkˈsɛpt]</p><p class="rus">Принимать (условия)</p></div>
+      <div><p class="eng">to Pretend </p><p class="pronouns">[prɪˈtɛnd]</p><p class="rus">Притворятся </p></div>
+      <div><p class="eng">to Be aware </p><p class="pronouns">[ˈbiː əˈwɛər ɒv]</p><p class="rus">Быть в курсе, осведомлённым</p></div>
+      <div><p class="eng">to Envy </p><p class="pronouns">[ˈɛnvɪ]</p><p class="rus">Завидовать </p></div>
+      <div><p class="eng">to Betray </p><p class="pronouns">[bɪˈtreɪ]</p><p class="rus">Предавать </p></div>
+      <div><p class="eng">to Wonder </p><p class="pronouns">[ˈwʌndə]</p><p class="rus">Интересоваться </p></div>
+      <div><p class="eng">to Think over </p><p class="pronouns">[ˈθɪŋkˈəʊvə]</p><p class="rus">Продумывать </p></div>
+      <div><p class="eng">to Lead </p><p class="pronouns">[liːd]</p><p class="rus">Вести  за собой</p></div>
+      <div><p class="eng">to Promote </p><p class="pronouns">[prəˈməʊt]</p><p class="rus">Продвигать </p></div>
+      <div><p class="eng">to Participate </p><p class="pronouns">[pɑːˈtɪsɪpeɪt]</p><p class="rus">Участвовать </p></div>
+      <div><p class="eng">to Interview </p><p class="pronouns">[ˈɪntəvjuː]</p><p class="rus">Опрашивать </p></div>
+      <div><p class="eng">to Trust </p><p class="pronouns">[trʌst]</p><p class="rus">Доверять </p></div>
+      <div><p class="eng">Furniture </p><p class="pronouns">['fɜːnɪʧə]</p><p class="rus">Мебель </p></div>
+      <div><p class="eng">Sofa </p><p class="pronouns">['səufə]</p><p class="rus">Диван </p></div>
+      <div><p class="eng">Chair </p><p class="pronouns">['ʧeə]</p><p class="rus">Стул </p></div>
+      <div><p class="eng">Stool </p><p class="pronouns">[stuːl]</p><p class="rus">Табурет </p></div>
+      <div><p class="eng">Table </p><p class="pronouns">[ ˈteɪbl ]</p><p class="rus">Стол </p></div>
+      <div><p class="eng">Desk </p><p class="pronouns">[ desk ]</p><p class="rus">Письменный стол </p></div>
+      <div><p class="eng">Coffee table </p><p class="pronouns">['kɔfɪ 'teɪbl]</p><p class="rus">Журнальный столик </p></div>
+      <div><p class="eng">Tv set </p><p class="pronouns">[ˌtiː'viː set]</p><p class="rus">Телевизор </p></div>
+      <div><p class="eng">Armchair </p><p class="pronouns">[ˌɑːm'ʧeə]</p><p class="rus">Кресло </p></div>
+      <div><p class="eng">Wardrobe </p><p class="pronouns">['wɔːdrəub]</p><p class="rus">Шкаф </p></div>
+      <div><p class="eng">Bookcase </p><p class="pronouns">['bukkeɪs]</p><p class="rus">Книжный шкаф </p></div>
+      <div><p class="eng">Cupboard </p><p class="pronouns">['kʌbəd]</p><p class="rus">Шкаф для посуды </p></div>
+      <div><p class="eng">Bed </p><p class="pronouns">[ bed ]</p><p class="rus">Кровать </p></div>
+      <div><p class="eng">Double bed </p><p class="pronouns">['dʌbl bed]</p><p class="rus">Двуспальная кровать </p></div>
+      <div><p class="eng">Bedside table </p><p class="pronouns">['bedˌsaɪd 'teɪbl]</p><p class="rus">Тумбочка </p></div>
+      <div><p class="eng">Wall-paper </p><p class="pronouns">[wɔːl 'peɪpə]</p><p class="rus">Обои </p></div>
+      <div><p class="eng">Wall lamp </p><p class="pronouns">[wɔːl læmp]</p><p class="rus">Настенный светильник </p></div>
+      <div><p class="eng">Standard lamp </p><p class="pronouns">['stændəd læmp]</p><p class="rus">Торшер </p></div>
+      <div><p class="eng">Chest of drawers </p><p class="pronouns">[ʧest əv drɔːrz]</p><p class="rus">Комод </p></div>
+      <div><p class="eng">Coat rack </p><p class="pronouns">[kəut ræk]</p><p class="rus">Вешалка </p></div>
+      <div><p class="eng">Bunk bed </p><p class="pronouns">[ˌbʌŋk bɛd]</p><p class="rus">Двухъярусная кровать </p></div>
+      <div><p class="eng">Wall unit </p><p class="pronouns">[wɔːl 'juːnɪt]</p><p class="rus">Мебельная стенка</p></div>
+      <div><p class="eng">Upholstery </p><p class="pronouns">[ʌp'həulst(ə)rɪ]</p><p class="rus">Обивка </p></div>
+      <div><p class="eng">Upholstered furniture </p><p class="pronouns">[ ʌpˈhoʊlstəd ˈfɜːnɪtʃə(r) ]</p><p class="rus">Мягкая мебель </p></div>
+      <div><p class="eng">Sink </p><p class="pronouns">[sɪŋk]</p><p class="rus">Злэв</p></div>
+      <div><p class="eng">Carpet </p><p class="pronouns">['kɑːpɪt]</p><p class="rus">Ковёр </p></div>
+      <div><p class="eng">Oven </p><p class="pronouns">['ʌv(ə)n]</p><p class="rus">Духовка </p></div>
+      <div><p class="eng">Tap </p><p class="pronouns">[tæp]</p><p class="rus">Водопроводный кран</p></div>
+      <div><p class="eng">Cooker, stove </p><p class="pronouns">['kukə] = [stəuv]</p><p class="rus">2. Плита </p></div>
+      <div><p class="eng">Vacuum cleaner </p><p class="pronouns">['vækjuːm 'kliːnə]</p><p class="rus">Пылесос </p></div>
+      <div><p class="eng">Washing machine </p><p class="pronouns">['wɔʃɪŋ mə'ʃiːn]</p><p class="rus">Стиральная машина </p></div>
+      <div><p class="eng">Cover, Bedspread</p><p class="pronouns">['kʌvə], ['bedspred]</p><p class="rus">2. Покрывало </p></div>
+      <div><p class="eng">Curtain </p><p class="pronouns">['kɜːt(ə)n]</p><p class="rus">Занавеска </p></div>
+      <div><p class="eng">Dinner set </p><p class="pronouns">['dɪnə set]</p><p class="rus">Столовый сервиз </p></div>
+      <div><p class="eng">Tea set </p><p class="pronouns">[tiː set]</p><p class="rus">Чайный сервиз </p></div>
+      <div><p class="eng">Linoleum </p><p class="pronouns">[lɪ'nəulɪəm]</p><p class="rus">Линолеум </p></div>
+      <div><p class="eng">Mat </p><p class="pronouns">[mæt]</p><p class="rus">Коврик</p></div>
+      <div><p class="eng">Pillow </p><p class="pronouns">['pɪləu]</p><p class="rus">Подушка </p></div>
+      <div><p class="eng">Blind </p><p class="pronouns">[blaɪnd]</p><p class="rus">Штора </p></div>
+      <div><p class="eng">Chandelier, lustre </p><p class="pronouns">[ˌʃændə'lɪə], ['lʌstə]</p><p class="rus">2. Люстра </p></div>
+      <div><p class="eng">Fireplace </p><p class="pronouns">['faɪəpleɪs]</p><p class="rus">Камин </p></div>
+      <div><p class="eng">Stereo system </p><p class="pronouns">['sterɪəu 'sɪstəm]</p><p class="rus">Стерео-система </p></div>
+      <div><p class="eng">Cutlery </p><p class="pronouns">['kʌtl(ə)rɪ]</p><p class="rus">Металлические столовые приборы</p></div>
+      <div><p class="eng">Cushion </p><p class="pronouns">['kuʃ(ə)n]</p><p class="rus">Диванная подушка </p></div>
+      <div><p class="eng">Dish-drainer </p><p class="pronouns">['dɪʃ 'dreɪnə]</p><p class="rus">Сушилка для посуды </p></div>
+      <div><p class="eng">Washing wall-paper </p><p class="pronouns">['wɔʃɪŋ wɔːl 'peɪpə]</p><p class="rus">Моющиеся обои </p></div>
+      <div><p class="eng">Houseplant </p><p class="pronouns">[hausplɑːnt]</p><p class="rus">Комнатное растение </p></div>
+      <div><p class="eng">Papered </p><p class="pronouns">['peɪpəd]</p><p class="rus">Оклеенный обоями </p></div>
+      <div><p class="eng">Door-handle </p><p class="pronouns">[dɔː ‘hændl]</p><p class="rus">Дверная ручка </p></div>
+      <div><p class="eng">Pillow-case </p><p class="pronouns">['pɪləu keɪs]</p><p class="rus">Наволочка </p></div>
+      <div><p class="eng">Radiator </p><p class="pronouns">['reɪdɪeɪtə]</p><p class="rus">Батарея центрального отопления</p></div>
+      <div><p class="eng">Sewing-machine </p><p class="pronouns">[səuɪŋmə'ʃiːn]</p><p class="rus">Швейная машина </p></div>
+      <div><p class="eng">Spyhole </p><p class="pronouns">['spaɪhəul]</p><p class="rus">Дверной глазок </p></div>
+      <div><p class="eng">Crockery </p><p class="pronouns">['krɔk(ə)rɪ]</p><p class="rus">Фарфоровая и фаянсовая посуда</p></div>
+      <div><p class="eng">China </p><p class="pronouns">['ʧaɪnə]</p><p class="rus">Фарфор </p></div>
+      <div><p class="eng">Appliance </p><p class="pronouns">[ə'plaɪən(t)s]</p><p class="rus">Приспособление, устройство, прибор </p></div>
+      <div><p class="eng">Vegetable cutter </p><p class="pronouns">['veʤ(ə)təbl 'kʌtə]</p><p class="rus">Овощерезка </p></div>
+      <div><p class="eng">Waffle-maker </p><p class="pronouns">['wɔfl 'meɪkə]</p><p class="rus">Вафельница </p></div>
+      <div><p class="eng">Central heating </p><p class="pronouns">['sentr(ə)l 'hiːtɪŋ]</p><p class="rus">Центральное отопление </p></div>
+      <div><p class="eng">Modern conveniences </p><p class="pronouns">['mɔd(ə)n kən'viːnɪən(t)siz]</p><p class="rus">Современные удобства </p></div>
+      <div><p class="eng">Refuse-chute </p><p class="pronouns">[rɪ'fjuːz ʃuːt]</p><p class="rus">Мусоропровод </p></div>
+      <div><p class="eng">Cooker hood </p><p class="pronouns">['kukə hud]</p><p class="rus">Вытяжка </p></div>
+      <div><p class="eng">Lift </p><p class="pronouns">[lɪft]</p><p class="rus">Лифт </p></div>
+      <div><p class="eng">Ceiling </p><p class="pronouns">['siːlɪŋ]</p><p class="rus">Потолок </p></div>
+      <div><p class="eng">2. Floor </p><p class="pronouns">[ flɔː(r) ]</p><p class="rus">Пол, этаж </p></div>
+      <div><p class="eng">Wall </p><p class="pronouns">[ wɔːl ]</p><p class="rus">Стена </p></div>
+      <div><p class="eng">Corner </p><p class="pronouns">[ ˈkɔːnə(r) ]</p><p class="rus">Угол </p></div>
+      <div><p class="eng">Roof </p><p class="pronouns">[ ruːf ]</p><p class="rus">Крыша </p></div>
+      <div><p class="eng">Entrance </p><p class="pronouns">[ˈɛntr(ə)ns]</p><p class="rus">Вход </p></div>
+      <div><p class="eng">Exit, WAY OUT</p><p class="pronouns">[ ˈeksɪt ], [weɪ] [aʊt]</p><p class="rus">2. Выход </p></div>
+      <div><p class="eng">Corridor </p><p class="pronouns">['kɔrɪdɔː]</p><p class="rus">Коридор </p></div>
+      <div><p class="eng">Bathroom </p><p class="pronouns">['bɑːθruːm]</p><p class="rus">Ванная комната </p></div>
+      <div><p class="eng">Hall </p><p class="pronouns">[hɔːl]</p><p class="rus">Прихожая </p></div>
+      <div><p class="eng">Dining room </p><p class="pronouns">[daɪnɪŋ ruːm]</p><p class="rus">Столовая </p></div>
+      <div><p class="eng">Toilet </p><p class="pronouns">['tɔɪlət]</p><p class="rus">Туалет </p></div>
+      <div><p class="eng">Balcony </p><p class="pronouns">['bælkənɪ]</p><p class="rus">Балкон </p></div>
+      <div><p class="eng">Living room, lounge, sitting room, drawing room</p><p class="pronouns">[ˈlɪvɪŋ ruːm], [launʤ], ['sɪtɪŋ ruːm], ['drɔːɪŋ ruːm]</p><p class="rus">4. Зал</p></div>
+      <div><p class="eng">Bedroom </p><p class="pronouns">['bedruːm]</p><p class="rus">Спальня </p></div>
+      <div><p class="eng">Kitchen </p><p class="pronouns">['kɪʧɪn]</p><p class="rus">Кухня </p></div>
+      <div><p class="eng">Guest room </p><p class="pronouns">[gest ru:m]</p><p class="rus">Гостевая комната </p></div>
+      <div><p class="eng">Porch </p><p class="pronouns">[pɔːʧ]</p><p class="rus">Крыльцо, подход </p></div>
+      <div><p class="eng">Flight of stairs </p><p class="pronouns">[flaɪt əv steəz]</p><p class="rus">Лестничный пролёт </p></div>
+      <div><p class="eng">Fence </p><p class="pronouns">[fɛns]</p><p class="rus">Забор </p></div>
+      <div><p class="eng">Hedge </p><p class="pronouns">[heʤ]</p><p class="rus">Изгородь </p></div>
+      <div><p class="eng">Storeroom </p><p class="pronouns">['stɔːrum]</p><p class="rus">Кладовая </p></div>
+      <div><p class="eng">2. Basement </p><p class="pronouns">['beɪsmənt]</p><p class="rus">Подвал, фундамент </p></div>
+      <div><p class="eng">2. Yard </p><p class="pronouns">[jɑːd]</p><p class="rus">Двор, ярд </p></div>
+      <div><p class="eng">Threshold </p><p class="pronouns">['θreʃ(h)əuld]</p><p class="rus">Порог </p></div>
+      <div><p class="eng">Window-sill </p><p class="pronouns">['wɪndəu-sɪl]</p><p class="rus">Подоконник </p></div>
+      <div><p class="eng">Type of building </p><p class="pronouns">[taɪp əv 'bɪldɪŋ]</p><p class="rus">Тип здания</p></div>
+      <div><p class="eng">Garage </p><p class="pronouns">['gærɑːʒ]</p><p class="rus">Гараж </p></div>
+      <div><p class="eng">Cottage </p><p class="pronouns">['kɔtɪʤ]</p><p class="rus">Коттедж, домик </p></div>
+      <div><p class="eng">Palace </p><p class="pronouns">['pælɪs]</p><p class="rus">Дворец </p></div>
+      <div><p class="eng">Mansion </p><p class="pronouns">['mæn(t)ʃ(ə)n]</p><p class="rus">Особняк, большой дом </p></div>
+      <div><p class="eng">Dormitory </p><p class="pronouns">['dɔːmɪt(ə)rɪ]</p><p class="rus">Студенческое общежитие </p></div>
+      <div><p class="eng">Block of flats </p><p class="pronouns">[blɔk əv flæts]</p><p class="rus">Многоквартирный дом </p></div>
+      <div><p class="eng">One two room flat </p><p class="pronouns">[. -ruːm flæt]</p><p class="rus">Одно двух  комнатная квартира</p></div>
+      <div><p class="eng">Apartment </p><p class="pronouns">[ə'pɑːtmənt]</p><p class="rus">Квартира </p></div>
+      <div><p class="eng">Country-house </p><p class="pronouns">[ˌkʌntrɪ 'haus]</p><p class="rus">Загородный дом </p></div>
+      <div><p class="eng">One two storeyed house </p><p class="pronouns">[...-'stɔːrɪd haus]</p><p class="rus">Одно двух этажный дом </p></div>
+      <div><p class="eng">Real estate </p><p class="pronouns">[ʹrıəl ı͵steıt]</p><p class="rus">Недвижимое имущество </p></div>
+      <div><p class="eng">Semi-detached house </p><p class="pronouns">[ˌsemɪ dɪ'tæʧt haus]</p><p class="rus">Один из двух домов под общей крышей </p></div>
+      <div><p class="eng">Sky-scraper </p><p class="pronouns">[skaɪ 'skreɪpə]</p><p class="rus">Небоскрёб </p></div>
+      <div><p class="eng">to Move in, to Move in</p><p class="pronouns">[ muːv ɪn, tə]</p><p class="rus">Въезжать, переезжать </p></div>
+      <div><p class="eng">to Move the furniture around </p><p class="pronouns">[muːv ðə 'fɜːnɪʧə ə'raund]</p><p class="rus">Передвигать мебель </p></div>
+      <div><p class="eng">to Look out onto </p><p class="pronouns">[luk aut 'ɔntuː]</p><p class="rus">Выходить на ... (об окнах) </p></div>
+      <div><p class="eng">to Shift </p><p class="pronouns">[ʃɪft]</p><p class="rus">Передвигать </p></div>
+      <div><p class="eng">3. to Renovate </p><p class="pronouns">['renəveɪt]</p><p class="rus">Реновировать, ремонтировать, реконструировать</p></div>
+      <div><p class="eng">Repair </p><p class="pronouns">[rɪ'peə]</p><p class="rus">Ремонт </p></div>
+      <div><p class="eng">to Rent a flat </p><p class="pronouns">[rent ə flæt]</p><p class="rus">Снимать квартиру </p></div>
+      <div><p class="eng">to Share a room with smb </p><p class="pronouns">[ʃeə ə ru:m wɪðsmb]</p><p class="rus">Проживать в одной комнате с кем-либо </p></div>
+      <div><p class="eng">to Put things right, to fix </p><p class="pronouns">[put θɪŋz raɪt], [fiks]</p><p class="rus">2. Починить, исправить </p></div>
+      <div><p class="eng">Spacious </p><p class="pronouns">['speɪʃəs]</p><p class="rus">Просторный </p></div>
+      <div><p class="eng">Whitewash </p><p class="pronouns">['waɪtwɔʃ]</p><p class="rus">Побелка</p></div>
+      <div><p class="eng">to Whitewash </p><p class="pronouns">['waɪtwɔʃ]</p><p class="rus">Белить</p></div>
+      <div><p class="eng">Housewarming party </p><p class="pronouns">['hausˌwɔːmɪŋ 'pɑːtɪ]</p><p class="rus">Новоселье </p></div>
+      <div><p class="eng">Places </p><p class="pronouns">[ˈpleɪsɪz]</p><p class="rus">Места </p></div>
+      <div><p class="eng">Grocery store </p><p class="pronouns">[ˈɡrəʊsəri stɔː ]</p><p class="rus">Продуктовый магазин </p></div>
+      <div><p class="eng">Ticket office, Booking office </p><p class="pronouns">[ˈtɪkɪt ˈɒfɪs ], [ 'bʋkɪŋ 'ɔfis ]</p><p class="rus">2. Билетная касса </p></div>
+      <div><p class="eng">Concert hall </p><p class="pronouns">[kənˈsɜːt hɔːl ]</p><p class="rus">Концертный зал </p></div>
+      <div><p class="eng">Shopping mall, Mall, shopping centre</p><p class="pronouns">[ˈʃɒpɪŋ mɔːl ], [mɔ:l], [ˈʃɒpɪŋ] [ˈsɛntə]</p><p class="rus">3. Торговый центр </p></div>
+      <div><p class="eng">International airport </p><p class="pronouns">[ˌɪntəˈnæʃn̩əl ˈeəpɔːt ]</p><p class="rus">Международный аэропорт</p></div>
+      <div><p class="eng">Stadium </p><p class="pronouns">[ˈsteɪdɪəm ]</p><p class="rus">Стадион </p></div>
+      <div><p class="eng">Railway station, train station</p><p class="pronouns">[ˈreɪlweɪ ˈsteɪʃn̩ ], [treɪn] [ˈsteɪʃən]</p><p class="rus">2. Вокзал </p></div>
+      <div><p class="eng">Cathedral </p><p class="pronouns">[kəˈθiːdrəl]</p><p class="rus">Собор </p></div>
+      <div><p class="eng">Zoo </p><p class="pronouns">[zuː ]</p><p class="rus">Зоопарк </p></div>
+      <div><p class="eng">Police station </p><p class="pronouns">[ pəˈliːs ˈsteɪʃn̩ ]</p><p class="rus">Полицейский участок </p></div>
+      <div><p class="eng">House </p><p class="pronouns">[ haʊs ]</p><p class="rus">Дом </p></div>
+      <div><p class="eng">Church </p><p class="pronouns">[ tʃɜːtʃ ]</p><p class="rus">Церковь </p></div>
+      <div><p class="eng">Hospital </p><p class="pronouns">[ ˈhɒspɪtl ]</p><p class="rus">Больница </p></div>
+      <div><p class="eng">Museum </p><p class="pronouns">[ mjuˈziːəm ]</p><p class="rus">Музей </p></div>
+      <div><p class="eng">Theater </p><p class="pronouns">[ ˈθɪə.tər ]</p><p class="rus">Театр </p></div>
+      <div><p class="eng">Currency exchange, money exchange</p><p class="pronouns">[ˈkʌrənsi ɪkˈstʃeɪndʒ ], [ˈmʌni] [ɪksˈʧeɪnʤ]</p><p class="rus">2. Обменник </p></div>
+      <div><p class="eng">ATM </p><p class="pronouns">[ˌeɪtiːˈem ]</p><p class="rus">Банкомат </p></div>
+      <div><p class="eng">Cinema </p><p class="pronouns">[ ˈsɪnəmə ]</p><p class="rus">Кино </p></div>
+      <div><p class="eng">Monument </p><p class="pronouns">[ˈmɒnjʊmənt]</p><p class="rus">Памятник </p></div>
+      <div><p class="eng">Bridge </p><p class="pronouns">[brɪdʒ ]</p><p class="rus">Мост </p></div>
+      <div><p class="eng">Consulate </p><p class="pronouns">[ˈkɒnsjʊlət ]</p><p class="rus">Консульство </p></div>
+      <div><p class="eng">Fire station </p><p class="pronouns">[ˈfaɪə ˈsteɪʃn̩ ]</p><p class="rus">Пожарная часть </p></div>
+      <div><p class="eng">Gas station </p><p class="pronouns">[ɡæs ˈsteɪʃn̩ ]</p><p class="rus">Заправка </p></div>
+      <div><p class="eng">District </p><p class="pronouns">[ˈdɪstrɪkt ]</p><p class="rus">Район </p></div>
+      <div><p class="eng">Downtown, the city centre</p><p class="pronouns">[ ˈdaʊntaʊn], [ðə ˈsɪti ˈsentə ]</p><p class="rus">2. Центр города </p></div>
+      <div><p class="eng">The outskirts </p><p class="pronouns">[ ði ˈaʊtskɜːts ]</p><p class="rus">Окраина города </p></div>
+      <div><p class="eng">Amusement park </p><p class="pronouns">[əˈmjuːzmənt pɑːk ]</p><p class="rus">Парк аттракционов </p></div>
+      <div><p class="eng">Skating rink </p><p class="pronouns">[ˈskeɪtɪŋ rɪŋk ]</p><p class="rus">Каток </p></div>
+      <div><p class="eng">Prison, jail </p><p class="pronouns">[ˈprɪzn̩ ]  [ʤeɪl]</p><p class="rus">2. Тюрьма </p></div>
+      <div><p class="eng">Castle </p><p class="pronouns">[ˈkɑːsl]̩</p><p class="rus">Замок </p></div>
+      <div><p class="eng">Fortress </p><p class="pronouns">[ˈfɔːtrɪs]</p><p class="rus">Крепость </p></div>
+      <div><p class="eng">2. City hall </p><p class="pronouns">[ˈsɪti hɔːl]</p><p class="rus">Здание городского управления, мэрия</p></div>
+      <div><p class="eng">Drawbridge </p><p class="pronouns">[ˈdrɔːbrɪdʒ]</p><p class="rus">Разводной мост </p></div>
+      <div><p class="eng">Tower </p><p class="pronouns">[ˈtaʊə ]</p><p class="rus">Башня </p></div>
+      <div><p class="eng">Temple </p><p class="pronouns">[ˈtempl ̩]</p><p class="rus">Храм </p></div>
+      <div><p class="eng">Chapel </p><p class="pronouns">[ˈtʃæpl ̩]</p><p class="rus">Часовня </p></div>
+      <div><p class="eng">Monastery </p><p class="pronouns">[ˈmɒnəstri ]</p><p class="rus">Монастырь </p></div>
+      <div><p class="eng">Courthouse </p><p class="pronouns">[ˈkɔːthaʊs ]</p><p class="rus">Здание суда </p></div>
+      <div><p class="eng">Art gallery </p><p class="pronouns">[ɑːt ˈɡæləri ]</p><p class="rus">Галерея искусств </p></div>
+      <div><p class="eng">Exhibition </p><p class="pronouns">[ˌeksɪˈbɪʃn̩ ]</p><p class="rus">Выставка </p></div>
+      <div><p class="eng">Opera house, Opera</p><p class="pronouns">[ˈɒprə ˈhaʊs ]</p><p class="rus">2. Опера </p></div>
+      <div><p class="eng">Concert, gig </p><p class="pronouns">['kɔnsət], [ɡɪɡ ]</p><p class="rus">2. Концерт </p></div>
+      <div><p class="eng">Music venue </p><p class="pronouns">[ˈmjuːzɪk ˈvenjuː ]</p><p class="rus">Концертная площадка </p></div>
+      <div><p class="eng">Theatrical performance </p><p class="pronouns">[θiˈætrɪk(ə)l ̩ pə'fɔːmən(t)s]</p><p class="rus">Театральное представление</p></div>
+      <div><p class="eng">Slot-machine </p><p class="pronouns">[ˈslɒt məʃiːn ]</p><p class="rus">Игровой автомат </p></div>
+      <div><p class="eng">Department store </p><p class="pronouns">[dɪˈpɑːtmənt stɔː ]</p><p class="rus">Универмаг </p></div>
+      <div><p class="eng">Newsagent's, news stand</p><p class="pronouns">[nju:z 'eɪdʒənts], [ʹnju:zstænd]</p><p class="rus">2. Газетный киоск </p></div>
+      <div><p class="eng">Embassy </p><p class="pronouns">[ˈembəsi ]</p><p class="rus">Посольство </p></div>
+      <div><p class="eng">Law office </p><p class="pronouns">[lɔː ˈɒfɪs ]</p><p class="rus">Юридическая фирма </p></div>
+      <div><p class="eng">Maternity home </p><p class="pronouns">[məˈtɜːnɪti həʊm ]</p><p class="rus">Роддом </p></div>
+      <div><p class="eng">Cemetery </p><p class="pronouns">[ˈsemətri ]</p><p class="rus">Кладбище </p></div>
+      <div><p class="eng">Registry office </p><p class="pronouns">[ˈredʒɪstri ˈɒfɪs ]</p><p class="rus">ЗАГС </p></div>
+      <div><p class="eng">Domestic airport </p><p class="pronouns">[dəˈmestɪk ˈeəpɔːt ]</p><p class="rus">Аэропорт внутренних авиалиний </p></div>
+      <div><p class="eng">Insurance company </p><p class="pronouns">[ ɪnˈʃʊərəns ˈkʌmpəni ]</p><p class="rus">Страховая компания </p></div>
+      <div><p class="eng">Shoe repair </p><p class="pronouns">[ʃuː rɪˈpeə ]</p><p class="rus">Ремонт обуви </p></div>
+      <div><p class="eng">Recreation area </p><p class="pronouns">[ˌrekrɪˈeɪʃn̩ ˈeəriə ]</p><p class="rus">Зона отдыха </p></div>
+      <div><p class="eng">Sanctuary </p><p class="pronouns">[ˈsæŋktʃʊəri ]</p><p class="rus">Заповедник </p></div>
+      <div><p class="eng">Culture centre </p><p class="pronouns">[ˈkʌltʃə ˈsentə ]</p><p class="rus">Культурный центр </p></div>
+      <div><p class="eng">Metropolis </p><p class="pronouns">[məˈtrɒpəlɪs ]</p><p class="rus">Очень крупный город </p></div>
+      <div><p class="eng">Business area </p><p class="pronouns">[ˈbɪznəs ˈeəriə ]</p><p class="rus">Деловой район </p></div>
+      <div><p class="eng">Residential area, residential quarter</p><p class="pronouns">[ˌrezɪˈdenʃl ̩ ˈeəriə ], [ˌrɛzɪˈdɛnʃəl] [ˈkwɔːtə]</p><p class="rus">2. Жилой район </p></div>
+      <div><p class="eng">Government area </p><p class="pronouns">[ˈɡʌvənmənt ˈeəriə ]</p><p class="rus">Правительственный район </p></div>
+      <div><p class="eng">Neighbourhood, vicinity, environs</p><p class="pronouns">[ ˈneɪbəhʊd], [vɪˈsɪnɪti ], [ɪnˈvaɪərənz]</p><p class="rus">3. Район, окрестность </p></div>
+      <div><p class="eng">Suburb </p><p class="pronouns">[ ˈsʌbɜːb ]</p><p class="rus">Пригород </p></div>
+      <div><p class="eng">Countryside </p><p class="pronouns">[ˈkʌntrisaɪd ]</p><p class="rus">Загород </p></div>
+      <div><p class="eng">Safe </p><p class="pronouns">[seɪf ]</p><p class="rus">Безопасный </p></div>
+      <div><p class="eng">Crowded </p><p class="pronouns">[ ˈkraʊdɪd ]</p><p class="rus">Переполненный, многолюдный </p></div>
+      <div><p class="eng">Getting around </p><p class="pronouns">[ˈɡetɪŋ əˈraʊnd ]</p><p class="rus">Передвижение по городу </p></div>
+      <div><p class="eng">Red square</p><p class="pronouns">[skweə ]</p><p class="rus">Площадь </p></div>
+      <div><p class="eng">Main road </p><p class="pronouns">[meɪn rəʊd ]</p><p class="rus">Главная дорога </p></div>
+      <div><p class="eng">Traffic lights </p><p class="pronouns">[ˈtræfɪk laɪts ]</p><p class="rus">Светофор </p></div>
+      <div><p class="eng">Pedestrian </p><p class="pronouns">[pɪˈdestrɪən ]</p><p class="rus">Пешеход </p></div>
+      <div><p class="eng">Canal </p><p class="pronouns">[kəˈnæl ]</p><p class="rus">Канал водный или трубопроводный</p></div>
+      <div><p class="eng">Embankment </p><p class="pronouns">ɪmˈbæŋkmənt </p><p class="rus">Набережная </p></div>
+      <div><p class="eng">Pavement, sidewalk </p><p class="pronouns">[ˈpeɪvmənt], [ˈsaɪdwɔːk ]</p><p class="rus">2. Тротуар </p></div>
+      <div><p class="eng">Crossing, zebra </p><p class="pronouns">[ˈkrɒsɪŋ], [ˈzebrə ]</p><p class="rus">2. Пешеходный переход </p></div>
+      <div><p class="eng">Underground crossing, pedestrian subway</p><p class="pronouns">[ˈʌndəɡraʊnd ˈkrɒsɪŋ ], [pɪˈdɛstrɪən] [ˈsʌbweɪ]</p><p class="rus">2. Подземный переход </p></div>
+      <div><p class="eng">Intersection, crossroads </p><p class="pronouns">[ˌɪntəˈsekʃn̩], [ˈkrɒsrəʊdz ]</p><p class="rus">2. Перекресток </p></div>
+      <div><p class="eng">Public transport </p><p class="pronouns">[ˈpʌblɪk ˈtrænspɔːt ]</p><p class="rus">Общественный транспорт </p></div>
+      <div><p class="eng">Taxi rank </p><p class="pronouns">[ˈtæksi ræŋk]</p><p class="rus">Стоянка такси </p></div>
+      <div><p class="eng">Side street </p><p class="pronouns">[saɪd striːt ]</p><p class="rus">Второстепенная дорога </p></div>
+      <div><p class="eng">City pass </p><p class="pronouns">[ˈsɪtipɑːs ]</p><p class="rus">Проездной билет </p></div>
+      <div><p class="eng">Bus route </p><p class="pronouns">[bʌs ruːt ]</p><p class="rus">Автобусный маршрут </p></div>
+      <div><p class="eng">Cycle lane </p><p class="pronouns">[ˈsaɪkl ̩ leɪn ]</p><p class="rus">Велосипедная дорожка </p></div>
+      <div><p class="eng">Cable car </p><p class="pronouns">[ˈkeɪbl ̩ kɑː ]</p><p class="rus">Фуникулер </p></div>
+      <div><p class="eng">Harbour </p><p class="pronouns">[ˈhɑːbə ]</p><p class="rus">Гавань</p></div>
+      <div><p class="eng">2. Dock </p><p class="pronouns">[ˈdɒk ]</p><p class="rus">Док, пристань </p></div>
+      <div><p class="eng">Double-decker bus </p><p class="pronouns">[ˌdʌbl ̩ ˈdekə bʌs ]</p><p class="rus">Двухэтажный автобус </p></div>
+      <div><p class="eng">Block, quarter</p><p class="pronouns">[ˈblɒk ], [ˈkwɔːtə]</p><p class="rus">2 Квартал </p></div>
+      <div><p class="eng">Trash container, Litter bin, rubbish bin</p><p class="pronouns">[træʃ kənˈteɪnə ], [ ˈlɪtə bɪn ], [ˈrʌbɪʃ] [bɪn]</p><p class="rus">3. Мусорная урна </p></div>
+      <div><p class="eng">Building site </p><p class="pronouns">[ˈbɪldɪŋ saɪt ]</p><p class="rus">Стройка (за забором)</p></div>
+      <div><p class="eng">Manhole </p><p class="pronouns">[ˈmænhəʊl ]</p><p class="rus">Люк </p></div>
+      <div><p class="eng">To get lost </p><p class="pronouns">[ˈɡet lɒst ]</p><p class="rus">Потетяться </p></div>
+      <div><p class="eng">City tour </p><p class="pronouns">[ˈsɪti tʊə ]</p><p class="rus">Тур по городу </p></div>
+      <div><p class="eng">Excursion </p><p class="pronouns">[ɪkˈskɜːʃn̩ ]</p><p class="rus">Экскурсия </p></div>
+      <div><p class="eng">Guide </p><p class="pronouns">[ə ɡaɪd ]</p><p class="rus">Гид </p></div>
+      <div><p class="eng">Sights </p><p class="pronouns">[saɪts ]</p><p class="rus">Достопримечательности </p></div>
+      <div><p class="eng">Visitor, tourist</p><p class="pronouns">[ˈvɪzɪtəz], [ˈtʊərɪsts ]</p><p class="rus">2. Турист</p></div>
+      <div><p class="eng">Admission fee, admission charge</p><p class="pronouns">[ədˈmɪʃn̩ fiː ], [ədˈmɪʃn̩ tʃɑːdʒ ]</p><p class="rus">2. Входная плата </p></div>
+      <div><p class="eng">Fare, price </p><p class="pronouns">[feə = praɪs ]</p><p class="rus">2. Цена </p></div>
+      <div><p class="eng">Guidebook </p><p class="pronouns">[ ˈɡaɪdbʊk ]</p><p class="rus">Путеводитель </p></div>
+      <div><p class="eng">Historic landmark </p><p class="pronouns">[hɪˈstɒrɪk ˈlændmɑːk ]</p><p class="rus">Историческая достопримечательность</p></div>
+      <div><p class="eng">Travel itinerary </p><p class="pronouns">[ˈtrævl ̩ aɪˈtɪnərəri ]</p><p class="rus">План поездки </p></div>
+      <div><p class="eng">To go sightseeing </p><p class="pronouns">[ɡəʊ ˈsaɪtsiːɪŋ ]</p><p class="rus">Осматривать достопримечательности</p></div>
+      <div><p class="eng">To take a tour </p><p class="pronouns">[teɪk ə tʊə ]</p><p class="rus">Поехать на экскурсию </p></div>
+      <div><p class="eng">Car hire, car rental </p><p class="pronouns">[kɑː ˈhaɪə], [kɑː ˈrentl ̩]</p><p class="rus">2. Аренда машины </p></div>
+      <div><p class="eng">Car wash </p><p class="pronouns">[kɑː wɒʃ ]</p><p class="rus">авто мойка</p></div>
+      <div><p class="eng">Car repair </p><p class="pronouns">[kɑː rɪˈpeə ]</p><p class="rus">Авторемонт </p></div>
+      <div><p class="eng">Traffic jam </p><p class="pronouns">[ˈtræfɪk dʒæm</p><p class="rus">Пробка </p></div>
+      <div><p class="eng">Tyre fitting </p><p class="pronouns">[ˈtaɪə ˈfɪtɪŋ ]</p><p class="rus">Шиномонтаж </p></div>
+      <div><p class="eng">One-way street </p><p class="pronouns">[ˌwʌnˈweɪ striːt ]</p><p class="rus">Дорога с односторонним движением</p></div>
+      <div><p class="eng">Road sign </p><p class="pronouns">[rəʊd saɪn ]</p><p class="rus">Дорожный знак </p></div>
+      <div><p class="eng">Dead end </p><p class="pronouns">[ded end ]</p><p class="rus">Тупик </p></div>
+      <div><p class="eng">Car park, parking lot </p><p class="pronouns">[kɑː pɑːk], [ˈpɑːkɪŋ lɒt ]</p><p class="rus">2. Парковка </p></div>
+      <div><p class="eng">Parking meter </p><p class="pronouns">[ˈpɑːkɪŋ ˈmiːtə ]</p><p class="rus">Счетчик платы за стоянку </p></div>
+      <div><p class="eng">Multi-storey car park </p><p class="pronouns">[ˈmʌlti -ˈstɔːri kɑː pɑːk ]</p><p class="rus">Многоуровневая парковка </p></div>
+      <div><p class="eng">Roundabout </p><p class="pronouns">[ˈraʊnd əˌbaʊt ]</p><p class="rus">Перекрёсток с круговым движением</p></div>
+      <div><p class="eng">Road works </p><p class="pronouns">[rəʊd ˈwɜːks ]</p><p class="rus">Дорожные работы </p></div>
+      <div><p class="eng">To tow away a car </p><p class="pronouns">[təʊ əˈweɪ ə kɑː ]</p><p class="rus">Эвакуировать машину </p></div>
+      <div><p class="eng">to Pay a fine </p><p class="pronouns">[peɪ ə faɪn ]</p><p class="rus">Заплатить штраф </p></div>
+      <div><p class="eng">Cosmetics shop </p><p class="pronouns">[kɒz'mɛtɪks ʃɒp]</p><p class="rus">Магазин косметики</p></div>
+      <div><p class="eng">Drugstore, chemist's, pharmacy</p><p class="pronouns">[drʌgstɔ:], ['kemɪsts], ['fɑːməsɪ]</p><p class="rus">3. Аптека </p></div>
+      <div><p class="eng">Bakery </p><p class="pronouns">[beɪkəri]</p><p class="rus">Булочная </p></div>
+      <div><p class="eng">Candy shop, cake shop</p><p class="pronouns">['kændɪ ʃɔp], [keɪk] [ʃɒp]</p><p class="rus">2 Кондитерская </p></div>
+      <div><p class="eng">Optometrist, optician</p><p class="pronouns">[ɒpʹtɒmıtrıst], [ɒpˈtɪʃən]</p><p class="rus">2 Оптика </p></div>
+      <div><p class="eng">Boutique </p><p class="pronouns">[bu:'ti:k]</p><p class="rus">Бутик </p></div>
+      <div><p class="eng">Butcher's, butcher shop</p><p class="pronouns">[bʊtʃəz], [ˈbʊʧə] [ʃɒp]</p><p class="rus">2. Мясной магазин</p></div>
+      <div><p class="eng">Footwear, shoe shop </p><p class="pronouns">[fʊtweə], [ʃuː ʃɔp]</p><p class="rus">2. Магазин обуви </p></div>
+      <div><p class="eng">Jewellery store </p><p class="pronouns">[dʒu:əlri stɔ:]</p><p class="rus">Ювелирный магазин</p></div>
+      <div><p class="eng">Electronics </p><p class="pronouns">[ɪlɛk'trɒnɪks]</p><p class="rus">Электроника </p></div>
+      <div><p class="eng">Furniture store </p><p class="pronouns">[fɜ:nɪtʃə stɔ:]</p><p class="rus">Мебельный магазин</p></div>
+      <div><p class="eng">Sport goods, sports store</p><p class="pronouns">[spɔ:t gʊdz], [spɔ:ts stɔ:]</p><p class="rus">2. Спор товары </p></div>
+      <div><p class="eng">Stationer's </p><p class="pronouns">[steɪʃnəz]</p><p class="rus">Канцелярия </p></div>
+      <div><p class="eng">Toy store </p><p class="pronouns">[tɔɪ stɔ:]</p><p class="rus">Магазин игрушек </p></div>
+      <div><p class="eng">Antique shop </p><p class="pronouns">[æn'ti:k ʃɒp]</p><p class="rus">Антикварный магазин</p></div>
+      <div><p class="eng">Fabric store </p><p class="pronouns">[fæbrɪk stɔ:]</p><p class="rus">Магазин тканей </p></div>
+      <div><p class="eng">Crockery, cookware </p><p class="pronouns">['krɔk(ə)rɪ], ['kukweə]</p><p class="rus">2. Магазин посуды </p></div>
+      <div><p class="eng">Florist </p><p class="pronouns">['flɔrɪst]</p><p class="rus">Цветочный магазин </p></div>
+      <div><p class="eng">Outlet mall </p><p class="pronouns">['autlet mɔːl]</p><p class="rus">Стоковый магазин</p></div>
+      <div><p class="eng">Pawnshop </p><p class="pronouns">['pɔːnʃɔp]</p><p class="rus">Ломбард </p></div>
+      <div><p class="eng">Liquor store </p><p class="pronouns">['lɪkə stɔː]</p><p class="rus">Винный магазин </p></div>
+      <div><p class="eng">Flea market </p><p class="pronouns">[fli: 'ma:kɪt]</p><p class="rus">Блошиный рынок </p></div>
+      <div><p class="eng">Pet shop </p><p class="pronouns">[pɛt ʃɒp]</p><p class="rus">Зоо магазин </p></div>
+      <div><p class="eng">Appliance store </p><p class="pronouns">[ə'plaɪəns stɔ:]</p><p class="rus">Магазин бытовых приборов</p></div>
+      <div><p class="eng">To pay (in) cash </p><p class="pronouns">[peɪ (in) kæʃ]</p><p class="rus">Платить наличными </p></div>
+      <div><p class="eng">To pay by a credit card </p><p class="pronouns">[peɪ baɪ ə 'krɛdɪt ka:d]</p><p class="rus">Платить кредиткой </p></div>
+      <div><p class="eng">To purchase, to buy</p><p class="pronouns">[pɜ:tʃəs], [baɪ]</p><p class="rus">2. Покупать </p></div>
+      <div><p class="eng">Quantities</p><p class="pronouns">['kwɔntətɪz]</p><p class="rus">Величины, объемы</p></div>
+      <div><p class="eng">Package </p><p class="pronouns">[pækɪʤ]</p><p class="rus">Упаковка (вообщем)</p></div>
+      <div><p class="eng">Jar</p><p class="pronouns">[ʤɑːr əv]</p><p class="rus">Банка</p></div>
+      <div><p class="eng">Carton</p><p class="pronouns">['kɑːt(ə)n]</p><p class="rus">Пачка</p></div>
+      <div><p class="eng">Packet</p><p class="pronouns">['pækɪt əv]</p><p class="rus">Пакет</p></div>
+      <div><p class="eng">Slice</p><p class="pronouns">[slaɪs]</p><p class="rus">Ломтик</p></div>
+      <div><p class="eng">2. Piece</p><p class="pronouns">[pi:s]</p><p class="rus">Кусок, штука</p></div>
+      <div><p class="eng">Dozen</p><p class="pronouns">['dʌz(ə)n əv]</p><p class="rus">Дюжина</p></div>
+      <div><p class="eng">2. Bottle</p><p class="pronouns">['bɔtl əv]</p><p class="rus">Бутылка, флакон</p></div>
+      <div><p class="eng">Box</p><p class="pronouns">[bɔks əv]</p><p class="rus">Коробка</p></div>
+      <div><p class="eng">Can, tin</p><p class="pronouns">[kæn, tɪn əv]</p><p class="rus">2. Консервная банка</p></div>
+      <div><p class="eng">Bar of (chocolate) </p><p class="pronouns">[ba:r əv]</p><p class="rus">Плитка (шоколада) </p></div>
+      <div><p class="eng">Bar of (soap) </p><p class="pronouns">[ba:r əv]</p><p class="rus">Кусок (мыла) </p></div>
+      <div><p class="eng">Cut of (beef) </p><p class="pronouns">[kʌt əv]</p><p class="rus">Кусок (говядины) </p></div>
+      <div><p class="eng">Bunch of (grapes) </p><p class="pronouns">[bʌnʧ əv]</p><p class="rus">Гроздь (винограда) </p></div>
+      <div><p class="eng">Bunch of (keys) </p><p class="pronouns">[bʌnʧ əv]</p><p class="rus">Связка (ключей) </p></div>
+      <div><p class="eng">Ball of (wool) </p><p class="pronouns">[bɔːl əv]</p><p class="rus">Клубок</p></div>
+      <div><p class="eng">Reel</p><p class="pronouns">[ri:l əv]</p><p class="rus">Катушка (ниток) </p></div>
+      <div><p class="eng">Roll</p><p class="pronouns">[rəul əv]</p><p class="rus">Рулон</p></div>
+      <div><p class="eng">2. Change </p><p class="pronouns">[ʧeɪnʤ]</p><p class="rus">Мелочь, сдача </p></div>
+      <div><p class="eng">To be in stock </p><p class="pronouns">[bi: ɪn stɔk]</p><p class="rus">Быть в продаже </p></div>
+      <div><p class="eng">To be out of stock </p><p class="pronouns">[bi: ʹaʋt əv stɔk]</p><p class="rus">Не иметься в продаже </p></div>
+      <div><p class="eng">Mark-down </p><p class="pronouns">['mɑːk daun]</p><p class="rus">Уценка </p></div>
+      <div><p class="eng">Travelling </p><p class="pronouns">[ 'trævliŋ ]</p><p class="rus">Путешествие </p></div>
+      <div><p class="eng">Vacation, leave </p><p class="pronouns">[və'keɪʃn], [liːv]</p><p class="rus">2. Отпуск </p></div>
+      <div><p class="eng">school or university vacation</p><p class="pronouns">[skuːl, juːnɪ'vɜːsətɪ və'keɪʃn]</p><p class="rus">Каникулы в институте или школе</p></div>
+      <div><p class="eng">Foreign </p><p class="pronouns">['fɔrɪn]</p><p class="rus">Иностранный </p></div>
+      <div><p class="eng">Package tour </p><p class="pronouns">[ 'pækiʤ tuə ]</p><p class="rus">Путешествие по туристической путевке</p></div>
+      <div><p class="eng">Cruise </p><p class="pronouns">[ kru:z ]</p><p class="rus">Морской круиз </p></div>
+      <div><p class="eng">Tour </p><p class="pronouns">[tuə]</p><p class="rus">Тур </p></div>
+      <div><p class="eng">Tourism </p><p class="pronouns">['tuərɪzm]</p><p class="rus">Туризм </p></div>
+      <div><p class="eng">Journey </p><p class="pronouns">[ ʤə:ni ]</p><p class="rus">Путешествие, длительная поездка</p></div>
+      <div><p class="eng">Trip, short journey </p><p class="pronouns">[ trip ], [ʃɔːt ʤə:ni ]</p><p class="rus">2. Путешествие, короткая поездка</p></div>
+      <div><p class="eng">Travel agency, tourist agency</p><p class="pronouns">[ trævl 'eiʤənsi],['tuərist 'eiʤənsi ]</p><p class="rus">2. Бюро путешествий </p></div>
+      <div><p class="eng">Hike </p><p class="pronouns">[ haik ]</p><p class="rus">Пешеходный поход, экскурсия</p></div>
+      <div><p class="eng">To travel </p><p class="pronouns">[ ˈtravəl]</p><p class="rus">Путешествовать </p></div>
+      <div><p class="eng">To go abroad </p><p class="pronouns">[ gəu ə'brɔːd]</p><p class="rus">Поехать заграницу </p></div>
+      <div><p class="eng">To make a journey </p><p class="pronouns">[ meik ə ʤə:ni ]</p><p class="rus">Совершить путешествие </p></div>
+      <div><p class="eng">To hitch-hike </p><p class="pronouns">[ hiʧ-haik ]</p><p class="rus">Путешествовать автостопом</p></div>
+      <div><p class="eng">To be on vacation, to rest</p><p class="pronouns">[ bi: ɔn və'keɪʃn], [ rest]</p><p class="rus">2. Отдыхать </p></div>
+      <div><p class="eng">To go on for a journey </p><p class="pronouns">[ gəu ɔn fɔ:r ə ʤə:ni ]</p><p class="rus">Отправиться в путешествие</p></div>
+      <div><p class="eng">Ticket</p><p class="pronouns">['tɪkɪt]</p><p class="rus">Билет</p></div>
+      <div><p class="eng">A ticket for a train, for a plane </p><p class="pronouns">[ə 'tikit fɔ:r ə trein, plein]</p><p class="rus">Билет на поезд, самолет </p></div>
+      <div><p class="eng">One-way ticket </p><p class="pronouns">[ˌwʌn 'weɪ 'tikit ]</p><p class="rus">Билет в один конец </p></div>
+      <div><p class="eng">Return ticket </p><p class="pronouns">[rɪ'tɜːn 'tikit ]</p><p class="rus">Билет "туда и обратно" </p></div>
+      <div><p class="eng">To get tickets </p><p class="pronouns">[ get 'tikits ]</p><p class="rus">Достать билеты </p></div>
+      <div><p class="eng">To book tickets in advance </p><p class="pronouns">[buk 'tikits in əd'vɑːn(t)s]</p><p class="rus">Купить билеты заранее </p></div>
+      <div><p class="eng">To produce tickets </p><p class="pronouns">[ prə'dju:s 'tikits ]</p><p class="rus">Предъявить билеты </p></div>
+      <div><p class="eng">Stowaway </p><p class="pronouns">['stəu əˌweɪ]</p><p class="rus">Пассажир без билета </p></div>
+      <div><p class="eng">Transport </p><p class="pronouns">[træn'spɔːt]</p><p class="rus">Транспорт </p></div>
+      <div><p class="eng">Airport </p><p class="pronouns">['eəpɔːt]</p><p class="rus">Аэропорт </p></div>
+      <div><p class="eng">Ship </p><p class="pronouns">[ʃɪp]</p><p class="rus">Корабль </p></div>
+      <div><p class="eng">airplane,  plane </p><p class="pronouns">['eəpleɪn]</p><p class="rus">2. Самолёт </p></div>
+      <div><p class="eng">Car, automobile </p><p class="pronouns">[kɑː], ['ɔːtəməubiːl]</p><p class="rus">2. Машина </p></div>
+      <div><p class="eng">Luggage, baggage </p><p class="pronouns">[ 'lʌgiʤ], ['bægiʤ ]</p><p class="rus">2. Багаж </p></div>
+      <div><p class="eng">Passport </p><p class="pronouns">['pɑːspɔːt]</p><p class="rus">Паспорт </p></div>
+      <div><p class="eng">Bus stop </p><p class="pronouns">[bʌs stɔp]</p><p class="rus">Автобусная остановка </p></div>
+      <div><p class="eng">Boarding </p><p class="pronouns">[ 'bɔ:rdɪŋ ]</p><p class="rus">Посадка (в самолёт)</p></div>
+      <div><p class="eng">Customs </p><p class="pronouns">['kʌstəms]</p><p class="rus">Таможня </p></div>
+      <div><p class="eng">Departure </p><p class="pronouns">[ di'pɑ:ʧə ]</p><p class="rus">Отправление </p></div>
+      <div><p class="eng">Arrival </p><p class="pronouns">[ ə'raivl ]</p><p class="rus">Прибытие </p></div>
+      <div><p class="eng">Hand luggage </p><p class="pronouns">[ hænd 'lʌgiʤ ]</p><p class="rus">Ручной багаж </p></div>
+      <div><p class="eng">To get on</p><p class="pronouns">[ get ɔn]</p><p class="rus">Садиться, сесть (на что-то) </p></div>
+      <div><p class="eng">Baggage carousel </p><p class="pronouns">['bægɪʤ ˌkærə'sel]</p><p class="rus">Багажный транспортер </p></div>
+      <div><p class="eng">Baggage claim area </p><p class="pronouns">['bægɪʤ kleɪm 'eərɪə]</p><p class="rus">Зона получения багажа </p></div>
+      <div><p class="eng">Security check point </p><p class="pronouns">[sɪ'kjuərətɪ 'ʧekpɔɪnt]</p><p class="rus">Контрольно-пропускной пункт</p></div>
+      <div><p class="eng">Metal detector </p><p class="pronouns">[ˈmetl dɪ'tektə]</p><p class="rus">Металлоискатель </p></div>
+      <div><p class="eng">Visa </p><p class="pronouns">['viːzə]</p><p class="rus">Виза </p></div>
+      <div><p class="eng">Cloak-room </p><p class="pronouns">['kləuk rum]</p><p class="rus">Камера хранения </p></div>
+      <div><p class="eng">Helicopter </p><p class="pronouns">['helɪkɔptə]</p><p class="rus">Вертолёт </p></div>
+      <div><p class="eng">Suburban train </p><p class="pronouns">[sə'bæːbən treɪn]</p><p class="rus">Электричка </p></div>
+      <div><p class="eng">Port</p><p class="pronouns">[pɔːt]</p><p class="rus">Порт</p></div>
+      <div><p class="eng">Yacht </p><p class="pronouns">[jo:t]</p><p class="rus">Яхта </p></div>
+    </div>
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=TlYzvfco"></script>
+    <script type="text/javascript" src="script/jquery-3.3.1.min.js" defer></script>
+
+    <script type="text/javascript" src="script/script.js" defer></script>
+
+
+  </body>
+</html>
