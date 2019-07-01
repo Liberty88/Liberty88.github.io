@@ -91,8 +91,12 @@ function playing() {
     //делаем подготовку с озвучке
     preparing();
 
-    timeToThink = translate.length * 200;
-
+    if((translate.length * 200) <= 3000){
+      timeToThink = 3000;
+    }else {
+      timeToThink = translate.length * 200;
+    }
+  
     // спрашиваем
     responsiveVoice.speak(word, wordLang, {rate: 0.8, pitch: 1, volume: 1, onend: endAsking});
 
